@@ -26,7 +26,7 @@
                         <div class="block block-1">
                             <div class="title-box">
                                 <ul class="title-ul">
-                                    <li class="titleActive" data-eq='0'>
+                                    <li class="title-active" data-eq='0'>
                                         <i>揽月云平台服务</i>
                                         <span class="iconfont icon-jiantou"></span>
                                     </li>
@@ -38,7 +38,7 @@
                             </div>
                             <div class="content-box">
                                 <ul class="content-ul">
-                                    <li class="contentActive">
+                                    <li class="content-active">
                                         <p>提升热力公司供热管理效率，对供热数据进行深度分析，不断改进供热方案，提高企业效益</p>
                                         <div>
                                             <a href="">Dtu（ Gprs ）联网模块</a>
@@ -65,7 +65,7 @@
                         <div class="block block-2">
                             <div class="title-box">
                                 <ul class="title-ul">
-                                    <li class="titleActive" data-eq='0'>
+                                    <li class="title-active" data-eq='0'>
                                         <i>城市智慧供热解决方案</i>
                                         <span class="iconfont icon-jiantou"></span>
                                     </li>
@@ -311,16 +311,16 @@
                 <div class="warp case">
                     <span>多场景解决方案, 赋能智能工业来来</span>
                     <ul class="case-title">
-                        <li class="case-active">
+                        <li class="case-active" data-eq="0">
                             <p>城市智慧供热解决方案</p>
                             <i></i>
                         </li>
-                        <li><p>城市智慧用热解决方案</p><i></i></li>
-                        <li><p>智慧用冷解决方案</p><i></i></li>
+                        <li data-eq="1"><p>城市智慧用热解决方案</p><i></i></li>
+                        <li data-eq="2"><p>智慧用冷解决方案</p><i></i></li>
                     </ul>
                     <div class="hr"></div>
                     <ul class="case-content">
-                        <li>
+                        <li class="case-content-active">
                             <i>城市智慧供热解决方案</i>
                             <ul class="case-1">
                                 <li>
@@ -359,15 +359,58 @@
                                 <img src="./../image/screen4.png" alt="">
                             </div>
                         </li>
-                        <!-- <li>城市智慧用热解决方案</li>
-                        <li>智慧用冷解决方案</li> -->
+                        <li>
+                            <i>城市智慧用热解决方案</i>
+                        </li>
+                        <li>
+                            <i>智慧用冷解决方案</i>
+                        </li>
                     </ul>
                     
                 </div>
             </div>
-            <div class="screen screen-other ">
-                <div class="screen-5">
-                    <span></span>
+            <div class="screen screen-other">
+                <div class="warp">
+                    <div class="ecological-top center">
+                        <span class="big-title">揽月云智能生态</span>
+                        <p class="big-describe">助力传统工业领域智能化转型，打造核心竞争力</p>
+                    </div>
+                    <div class="ecological-bottom">
+                        <div class="ecological-left">
+                            <img src="" alt="">
+                        </div>
+                        <div class="ecological-right">
+                            <ul class="ecological-ul">
+                                <li class="ecological-active">
+                                    <img src="./../image/screen5_1.png" alt="">
+                                    <div class="ecological-details">
+                                        <span>工业设备合作商招募</span>
+                                        <p><span>阀门制造企业</span><span>室内温度计制造企业</span></p>
+                                        <p><span>计量表制造企业</span><span>水泵制造企业</span></p>
+                                        <i></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./../image/screen5_2.png" alt="">
+                                    <div class="ecological-details">
+                                        <span>方案销售渠道招募</span>
+                                        <p>具有供能和用能相关行业的销售渠道</p>
+                                        <p>加入智信远景生态系统，体验全生态链互助营销新模式。</p>
+                                        <i></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./../image/screen5_3.png" alt="">
+                                    <div class="ecological-details">
+                                        <span>Power by LANYUE 认证</span>
+                                        <p>建立自有认证体系</p>
+                                        <p>保证接入揽月云平台工业设备品质</p>
+                                        <i></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer"></div>
@@ -375,6 +418,7 @@
     </div>
 
     <script src="./../plugins/jquery/jquery-1.11.3.min.js"></script>
+    <script src="./../js/tab_switch.js"></script>
     <script src="./../js/head.js"></script>
     <script>
         (function() {
@@ -396,6 +440,7 @@
                     this.compatible();
                     this.play();
                     this.productSwitch();
+                    this.caseSwitch();
                 },
 
                 assignment: function() {
@@ -452,24 +497,13 @@
                 productSwitch: function() {
                     const productTitleList = [].slice.call($('.product-service-top li'));
                     const productContentList = [].slice.call($('.product-content-ul>li'));
-                    this.tabSwitchFun(productTitleList, productContentList);
+                    tabSwitch(productTitleList, productContentList, 'product');
                 },
-                tabSwitchFun: function(titleList, contentList) {
-                    for(let i in titleList) {
-                        titleList[i].onmouseover = function() {
-                            if(this.className.indexOf('product-active') == -1) {
-                                let eq = this.getAttribute('data-eq');
-                                for(let k in titleList) {
-                                    titleList[k].classList.remove('product-active');
-                                }
-                                this.classList.add('product-active');
-                                for(let j in contentList) {
-                                    contentList[j].classList.remove('product-content-active');
-                                }
-                                contentList[eq].classList.add('product-content-active');
-                            }
-                        }
-                    }
+                //解决方案
+                caseSwitch: function() {
+                    const caseTitleList = [].slice.call($('.case-title>li'));
+                    const caseContentList = [].slice.call($('.case-content>li'));
+                    tabSwitch(caseTitleList, caseContentList, 'case');
                 }
             }
             //滚动事件处理函数

@@ -16,10 +16,6 @@ html,body{
     position: relative;
 }
 
-/* .screen>div {
-    height: 100%;
-    overflow: hidden;
-} */
 .screen-first {
     overflow: hidden;
     position: relative;
@@ -35,6 +31,7 @@ html,body{
     height: 25%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .li-1 {
     background: url(./../image/banner.png);
@@ -95,6 +92,7 @@ html,body{
 .screen-2 {
     color: #ffffff;
     background: url(./../image/screen2_bg.png);
+    background-position: center;
     position: relative;
 }
 .warp {
@@ -274,7 +272,7 @@ html,body{
 }
 .li-content>i:hover {
     color: #ffffff;
-    border-color: transparent;
+    border-color: #184880;
     cursor: pointer;
     background-image: linear-gradient(
 		#184880, 
@@ -343,10 +341,16 @@ html,body{
 .case-content {
     margin-top: 7%;
 }
+.case-content>li {
+    display: none;
+}
 .case-content>li>i {
     font-size: 30px;
     display: inline-block;
     margin-bottom: 3%;
+}
+.case-content-active {
+    display: block !important;
 }
 .case-1 {
     width: 890px;
@@ -369,7 +373,7 @@ html,body{
     width: 160px;
     height: 42px;
     line-height: 42px;
-    color: 16px;
+    font-size: 16px;
     text-align: center;
     border: 1px solid #ffffff;
     margin-top: 4%;
@@ -378,10 +382,76 @@ html,body{
 .case-details>a {
     color: #ffffff;
 }
-
-
-
-
-.screen-5 {
-    background: blue;
+.case-details:hover {
+    background: #184880;
+    border-color: #184880;
 }
+/* .screen-5 */
+.ecological-top .big-title {
+    margin: 6% 0 1%;
+    font-size: 40px;
+    color: #333333;
+    line-height: 48px;
+    display: inline-block;
+}
+.ecological-top .big-describe {
+    color: #81858f;
+}
+.ecological-bottom {
+    margin-top: 6%;
+    height: 540px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ecological-left {
+    width: 560px;
+}
+.ecological-right {
+    width: 600px;
+}
+.ecological-ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ecological-ul>li {
+    height: 74px;
+    padding: 40px 30px 40px 40px;
+    background: #ffffff;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ecological-active {
+    box-shadow: 0px 6px 12px 0px 
+		rgba(23, 130, 255, 0.16);
+}
+.ecological-active>.ecological-details>span {
+    color: #1782ff;
+}
+.ecological-details {
+    margin-left: 40px;
+}
+.ecological-details>span {
+    font-size: 20px;
+    color: #333333;
+    line-height: 24px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.ecological-details>p {
+    width: 400px;
+    color: #999999;
+    line-height: 26px;
+}
+.ecological-details>p>span {
+    margin-right: 20px;
+}
+
+
+
+
+

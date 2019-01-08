@@ -1,6 +1,5 @@
 .head {
     width: calc(100% - 80px);
-    min-width: 1120px;
     height: 87px;
     padding: 0 40px;
     position: fixed;
@@ -20,7 +19,7 @@
 .head>.menu {
     width: calc(100% - 300px);
     float: left;
-    margin-left: 100px;
+    margin-left: 5%;
     font-size: 18px;
 }
 .menu>ul {
@@ -100,13 +99,13 @@
 .title-ul>li>span {
     display: none;
 }
-.titleActive {
+.title-active {
     background-color: #1d2329;
 }
-.titleActive>i {
+.title-active>i {
     color: #f9c601;
 }
-.titleActive>span {
+.title-active>span {
     display: block !important;
 }
 .content-box {
@@ -134,7 +133,7 @@
     display: inline-block;
     margin: 0 10px 8px 0;
 }
-.contentActive {
+.content-active {
     display: block !important;
 }
 
