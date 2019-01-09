@@ -669,9 +669,41 @@ html,body{
     align-items: center;
     cursor: pointer;
 }
+.switch-point {
+    position: absolute;
+    top: calc(50% - 172px);
+    right: 20px;
+}
+.switch-point>li {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.switch-point>li>span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    border: 2px solid transparent;
+    display: inline-block;
+}
+.point-active {
+    border-color: rgba(255,255,255,0.45) !important;
+}
+.point-active>span {
+    border-color: #ffffff !important;
+    background: #ffffff !important;
+}
 .hide {
     display: none !important;
 }
+
 
 
 

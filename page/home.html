@@ -497,8 +497,15 @@
         <div class="arrow warp">
             <img src="./../image/ic_arrow.png" alt="">
         </div>
-        <ul class="">
-            <li></li>
+        <ul class="switch-point">
+            <li class="point-active" data-eq="1"><span></span></li>
+            <li data-eq="2"><span></span></li>
+            <li data-eq="3"><span></span></li>
+            <li data-eq="4"><span></span></li>
+            <li data-eq="5"><span></span></li>
+            <li data-eq="6"><span></span></li>
+            <li data-eq="7"><span></span></li>
+            <li data-eq="8"><span></span></li>
         </ul>
     </div>
 
@@ -523,6 +530,8 @@
             let timerUnit2 = null;
             const unit1Childs = [].slice.call($('.unit-1>li'));
             const unit2Childs = [].slice.call($('.unit-2>li'));
+            let eq;
+            let currentEq = 1;
             
             const Home = {
                 init: function() {
@@ -536,8 +545,9 @@
                     this.playUnit2();
                     this.stopPlayUnit1();
                     this.stopPlayUnit2();
-                    // this.ecologicalEvent();
-                    this.clickFun();
+                    this.ecologicalEvent();
+                    this.clickArrow();
+                    this.clickPoint();
                 },
                 assignment: function() {
                     $("#home").css('height', hei + "px");
@@ -690,27 +700,68 @@
                         }
                     }
                 },
-                clickFun: function() {
+                clickArrow: function() {
                     $('.arrow').click(function() {
-
-                        console.log(index)
-                        console.log(now)
                         index++;
-                        console.log(index);
-                        
-                        
-                        if(index === 8) {
+                        eq = index;
+                        currentEq = index;
+                        console.log('index:::', index);
+                        console.log('eq:::', eq);
+                        console.log('currentEq:::', currentEq);
+                        switchPoint();
+                        if(index == 8) {
                             now = now - footerHeight;
                             $('.arrow').addClass('hide');
                         }else {
                             now = now - hei + 88;
                         }
+                        console.log(now)
+                        if(now < 0) {
+                            head.style.background = '#333333';
+                        }
+                        toPage(now);
+                    })
+                },
+                clickPoint: function() {
+                    $('.switch-point>li').click(function() {
+                        eq = $(this).attr('data-eq');
+                        index = eq;
+                        console.log('index:::', index);
+                        console.log('eq:::', eq);
+                        switchPoint();
+                        let n;
+                        if(eq > currentEq) {
+                            if(eq == 8) {
+                                n = eq - currentEq - 1;
+                                now = now - (hei - 88) * n - footerHeight;
+                                $('.arrow').addClass('hide');
+                            }else {
+                                n = eq - currentEq;
+                                now = now - (hei - 88) * n;
+                            }
+                        }else if(eq < currentEq) {
+                            $('.arrow').removeClass('hide');
+                            if(currentEq == 8) {
+                                n = currentEq - eq - 1;
+                                now = now + (hei - 88) * n + footerHeight;
+                            }
+                            if(currentEq != 8) {
+                                n = currentEq - eq;
+                                now = now + (hei - 88) * n;
+                            }
+                            if(eq == 1) {
+                                alert(1)
+                                now = 0;
+                                head.style.background = 'rgba(0, 0, 0, 0.2)';
+                            }
+                        }
+                        currentEq = eq;
+                        console.log('currentEq:::', currentEq);
                         console.log(now);
                         if(now < 0) {
                             head.style.background = '#333333';
                         }
                         toPage(now);
-                        
                     })
                 }
             }
@@ -721,11 +772,16 @@
                 //mousewheel事件中的 “event.wheelDelta” 属性值：返回的如果是正值说明滚轮是向上滚动
                 //DOMMouseScroll事件中的 “event.detail” 属性值：返回的如果是负值说明滚轮是向上滚动
                 if ((endTime - startTime) < -1000){
-                    if(delta>0 && index === 7) {
+                    if(delta>0 && index == 7) {
+                        index++;
+                        eq = index;
+                        currentEq = index;
+                        console.log('index:::', index);
+                        console.log('eq:::', eq);
+                        console.log('currentEq:::', currentEq);
                         now = now - footerHeight;
                         console.log(now);
-                        index++
-                        console.log(index)
+                        switchPoint();
                         toPage(now);
                         $('.arrow').addClass('hide');
                     }
@@ -733,9 +789,14 @@
                         alert('bottom')
                         //向下滚动
                         index++;
-                        console.log(index);
+                        eq = index;
+                        currentEq = index;
+                        console.log('index:::', index);
+                        console.log('eq:::', eq);
+                        console.log('currentEq:::', currentEq);
                         now = now - hei + 88;
                         console.log(now);
+                        switchPoint();
                         if(now < 0) {
                             head.style.background = '#333333';
                         }
@@ -755,7 +816,13 @@
                             $('.arrow').removeClass('hide');
                         }
                         index--;
-                        console.log(index);
+                        eq = index;
+                        currentEq = index;
+                        console.log('index:::', index);
+                        console.log('eq:::', eq);
+                        console.log('currentEq:::', currentEq);
+                        console.log(now);
+                        switchPoint();
                         if(now == 0) {
                             head.style.background = 'rgba(0, 0, 0, 0.2)';
                         }
@@ -766,10 +833,12 @@
                     event.preventDefault();    
                 }    
             }
-            
             function toPage(now){        
                 $("#main").animate({top:(now+'px')},1000);     //jquery实现动画效果
-                //setTimeout("main.style.top = now + 'px'",1000);     javascript 实现动画效果
+            }
+            function switchPoint(){        
+                $('.switch-point>li').removeClass('point-active');
+                $('.switch-point>li').eq(index-1).addClass('point-active');
             }
             Home.init();
         })();
