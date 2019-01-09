@@ -1,5 +1,5 @@
 (function() {
-    const App = {
+    const Head = {
         init: function() {
             const menuProductTitleList = [].slice.call($('.block-1 .title-ul>li'));
             const menuProductContentList = [].slice.call($('.block-1 .content-ul>li'));
@@ -9,5 +9,5 @@
             tabSwitch(menuCaseTitleList, menuCaseContentList);
         }
     }
-    App.init();
+    Head.init();
 })();
