@@ -648,6 +648,9 @@ html,body{
     background: #ffffff;
 }
 
+
+
+/* 首页悬浮 */
 #home>.arrow {
     position: absolute;
     left: calc(50% - 25px);
@@ -679,7 +682,7 @@ html,body{
     height: 22px;
     border-radius: 50%;
     border: 2px solid transparent;
-    margin: 15px 0;
+    margin: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -702,6 +705,28 @@ html,body{
 }
 .hide {
     display: none !important;
+}
+.suspension {
+    width: 48px;
+    height: 179px;
+    position: absolute;
+    right: 30px;
+    bottom: 95px;
+}
+.suspension>p {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+.suspension img {
+    width: 26px;
+    height: 26px;
+}
+.back-top {
+    margin-top: 35px;
 }
 
 
