@@ -36,7 +36,7 @@
     margin-right: 40px;
     display: flex;
     align-items: center;
-    
+    cursor: pointer;
 }
 .menu>ul>li>a {
     color: #ffffff;
@@ -111,6 +111,8 @@
 }
 .block-title>a {
     color: #ffffff;
+    display: inline-block;
+    width: 220px;
 }
 .block-title>span {
     display: none;
@@ -145,6 +147,11 @@
 .block-content a:hover {
     color: #f9c601;
 }
+
+
+
+
+
 .hide {
     display: none;
 }

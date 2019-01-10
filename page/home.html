@@ -29,20 +29,20 @@
                                 <ul class="title-ul">
                                     <li data-eq='0'>
                                         <div class="block-title">
-                                            <a href="">揽月云平台服务</a>
+                                            <a data-href="prodouct_platform.html" data-i="2" onclick="pageJump(event)">揽月云平台服务</a>
                                         </div>
                                     </li>
                                     <li data-eq='1'>
                                         <div class="block-title">
-                                            <a>智慧供热云平台</a>
-                                            <span class="iconfont icon-jiantou"></span>
+                                            <a data-href="prodouct_platform.html" data-i="2" onclick="pageJump(event)">智慧供热云平台</a>
+                                            <!-- <span class="iconfont icon-jiantou"></span> -->
                                         </div>
-                                        <div class="block-content">
+                                        <!-- <div class="block-content">
                                             <p>提升热力公司供热管理效率，对供热数据进行深度分析，提高企业效益</p>
-                                            <a href="">平台介绍</a>
-                                            <a href="">换热站APP</a>
-                                            <a href="">揽月+APP</a>
-                                        </div>
+                                            <a>平台介绍</a>
+                                            <a>换热站APP</a>
+                                            <a>揽月+APP</a>
+                                        </div> -->
                                     </li>
                                     <li data-eq='2'>
                                         <div class="block-title">
@@ -51,10 +51,10 @@
                                         </div>
                                         <div class="block-content">
                                             <p>提升热力公司供热管理效率，对供热数据进行深度分析，提高企业效益</p>
-                                            <a href="">Dtu（ Gprs ）联网模块</a>
-                                            <a href="">室温采集器（nb，wifi）</a>
-                                            <a href="">入户调控阀（nb）</a>
-                                            <a href="">Iotbox（NB）数据通讯模块</a>
+                                            <a data-href="dtu_details.html" data-i="2" onclick="pageJump(event)">Dtu（ Gprs ）联网模块</a>
+                                            <a data-href="room_temperature_details.html" data-i="2" onclick="pageJump(event)">室温采集器（nb，wifi）</a>
+                                            <a data-href="valve_details.html" data-i="2" onclick="pageJump(event)">入户调控阀（nb）</a>
+                                            <a data-href="lotBox_details.html" data-i="2" onclick="pageJump(event)">Iotbox（NB）数据通讯模块</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -68,17 +68,17 @@
                                 <ul class="title-ul">
                                     <li data-eq='0'>
                                         <div class="block-title">
-                                            <a href="solution.html">城市智慧供热解决方案</a>
+                                            <a data-href="platform_summary.html" data-i="3" onclick="pageJump(event)">城市智慧供热解决方案</a>
                                         </div>
                                     </li>
-                                    <li data-eq='1'>
+                                    <li data-eq='1' class="disabled">
                                         <div class="block-title">
-                                            <a href="javascript:;">城市智慧用热解决方案</a>
+                                            <i>城市智慧用热解决方案</i>
                                         </div>
                                     </li>
-                                    <li data-eq='2'>
+                                    <li data-eq='2' class="disabled">
                                         <div class="block-title">
-                                            <a href="javascript:;">智慧用冷解决方案</a>
+                                            <i>智慧用冷解决方案</i>
                                         </div>
                                     </li>
                                 </ul>
@@ -86,10 +86,10 @@
                         </div>
                     </li>
                     <li>
-                        <a href="zoology.html">揽月云生态</a>
+                        <a data-href="zoology.html" data-i="4" onclick="pageJump(event)">揽月云生态</a>
                     </li>
                     <li>
-                        <a href="about_us.html">关于我们</a>
+                        <a data-href="about_us.html" data-i="5" onclick="pageJump(event)">关于我们</a>
                     </li>
                 </ul>
             </div>
@@ -332,7 +332,7 @@
                                 </li>
                             </ul>
                             <div class="case-details">
-                                <a href="">了解详情</a>&nbsp;
+                                <a data-href="platform_summary.html" data-i="3" onclick="pageJump(event)">了解详情</a>&nbsp;
                                 <img src="./../image/screen4.png" alt="">
                             </div>
                         </li>
@@ -417,7 +417,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="learn-about">了解我们</a>
+                    <a data-href="about_us.html" data-i="5" onclick="pageJump(event)" class="learn-about">了解我们</a>
                 </div>
             </div>
             <div class="screen screen-other screen-7">
@@ -449,7 +449,7 @@
                 </div>
                 <div class="cooperation-bottom">
                     <span>加入揽月云智能工业生态链</span>
-                    <div><a href="">立即加入</a></div>
+                    <div><a data-href="zoology.html" data-i="4" onclick="pageJump(event)">立即加入</a></div>
                 </div>  
             </div>
             <div class="footer">
@@ -497,6 +497,7 @@
 
     <script src="./../plugins/jquery/jquery-1.11.3.min.js"></script>
     <script src="./../js/tab_switch.js"></script>
+    <script src="./../js/page_jump.js"></script>
     <script>
         (function() {
             //如果不加时间控制，滚动会过度灵敏，一次翻好几屏

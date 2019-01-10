@@ -566,6 +566,7 @@ html,body{
 .learn-about:hover {
     background: #184880;
     border-color: #184880;
+    cursor: pointer;
 }
 /* screen-7 */
 .screen-7 {
@@ -641,7 +642,8 @@ html,body{
     line-height: 56px;
     color: #ffffff;
 	border-radius: 2px;
-	border: solid 1px #ffffff;
+    border: solid 1px #ffffff;
+    cursor: pointer;
 }
 .cooperation-bottom a:hover {
     color: #1782ff;
