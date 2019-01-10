@@ -10,7 +10,7 @@ label,div,ol,ul,h1,h2,h3,h4,h5,h6,header,nav,article,footer,dl,dd,dt,tr,th,td{
 }
 
 body *{
-	font-family: 'microsoft yahei', Arial, Helvetica, sans-serif;
+	font-family: SourceHanSansCN-Medium, 'Microsoft YaHei', Arial, Helvetica, sans-serif;
 }
 
 li{
@@ -37,10 +37,12 @@ button::-moz-focus-inner{
 	padding: 0;
 }
 
-/* img{
+img {
 	display: block;
 	border: none;
-} */
+	width: 100%;
+	height: 100%;
+}
 
 a,u{
 	text-decoration: none;
