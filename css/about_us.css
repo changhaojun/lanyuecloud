@@ -190,21 +190,36 @@ i,em{
     background:rgba(245,248,255,1);
     padding-top: 64px;
     cursor: pointer;
+    text-align: center;
+
 }
 .servers ul li:nth-child(2){
     margin: 0 30px;
 }
-
 .servers ul li:hover{
     box-shadow:rgba(142,144,148,0.3) 0px 0px 12px  ;
     -webkit-box-shadow:  rgba(142,144,148,0.3) 0px 0px 12px ;
     -ms-box-shadow: rgba(142,144,148,0.3) 0px 0px 12px ;
     -moz-box-shadow:  rgba(142,144,148,0.3) 0px 0px 12px  ;
+    background: #fff;
+}
+.servers ul li:hover .servers-mark {
+    color: #1782FF;
+}
+.servers ul li:hover .servers-phone {
+    color: #1782FF;
+}
+.servers ul li:hover .servers-online {
+    color: #1782FF;
 }
 .servers ul li .servers-mark{
     width: 80px;
     height: 80px;
     margin: 0 auto;
+    line-height: 80px;
+}
+.servers ul li .servers-mark .iconfont{
+    font-size: 74px;
 }
 .servers ul li .servers-item{
     font-weight:500;
@@ -215,7 +230,6 @@ i,em{
     width: 240px;
     margin: 0 auto;
     margin-top: 26px;
-    text-align: left;
 }
 .servers ul li .servers-phone{
     font-size: 18px;
@@ -234,7 +248,7 @@ i,em{
     color: #999999;
     width: 240px;
     margin: 0 auto;
-    margin-top: 22px;
+    margin-top: 20px;
     text-align: left;
 }
 .servers ul li .servers-online div{
