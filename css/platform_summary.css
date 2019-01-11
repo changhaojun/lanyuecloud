@@ -149,9 +149,11 @@ i,em{
     font-weight: 600;
 }
 .summary  .summary-right{
-    margin-left: 60px;
-    width:1920px;
+    margin-left: 20px;
+    width:600px;
     height:663px;
+    float: left;
+    overflow: hidden;
 }
 /*conditions*/
 .conditions{
