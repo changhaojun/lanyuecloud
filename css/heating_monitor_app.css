@@ -1,0 +1,204 @@
+h3{
+    /*font-weight: 600;*/
+    font-size:36px;
+}
+@media (min-width: 1366px) {
+    .plat-common{
+        width: 1200px;
+    }
+}
+body{
+    overflow-x: hidden;
+    font-size: 18px;
+}
+.container{
+    padding:0;
+}
+.row{
+    margin:0;
+}
+.platform {
+    position: relative;
+    margin: 0;
+    color: #333;
+    height: 100%;
+    overflow: hidden;
+    background: url("../img/app/bannerbg.png") no-repeat;
+    background-size: cover;
+}
+.platform p{
+    width:80%;
+    color: #696D6F;
+    padding-top:5px;
+}
+.plat-common {
+    margin: 0 auto;
+}
+.plat-banner{
+    padding-top:3%;
+}
+@media (min-width: 1000px) {
+    .plat-banner p{
+        width:40%;
+    }
+}
+.consultation{
+    font-size: 20px;
+    margin:40px 0 100px 0;
+    cursor: pointer;
+}
+.consultation p{
+    color: #fff;
+    width: 226px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    background-color: #184880;
+    border: solid 1px #1782ff;
+    padding:0;
+}
+.consultation p i {
+    display: inline-block;
+    width: 24px;
+    height:24px;
+    vertical-align: middle;
+    margin:-5px 0 0 5px;
+    background: url("../img/app/download.png") no-repeat;
+}
+.consultation p:hover{
+    background-color: rgba(21,100,203,0.7);
+}
+.feature-title{
+    font-size:40px;
+    font-family:SourceHanSansCN-Medium;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    padding-bottom:10px;
+}
+.feature-title-black{
+    color: #333;
+}
+.attetion {
+    margin: 0 auto;
+    margin:96px 0 166px;
+}
+.attention-heat{
+    height: 480px;
+    position: relative;
+}
+.attention-bg {
+    width: 100%;
+    height: 480px;
+    background: url("../img/app/bg.png") no-repeat;
+    padding: 10% 0 0 80px;
+    color: #fff;
+    position: absolute;
+}
+.attention-bg  p{
+    padding-top:10px;
+    width:37%;
+}
+.attention-template {
+    width: 246px;
+    height: 496px;
+    position: absolute;
+    z-index: 10;
+    right: 198px;
+    bottom:-72px;
+}
+.operation-condition{
+    background:#F5F5FF ;
+    text-align: center;
+    padding:96px 0;
+    height:100%;
+    overflow: hidden;
+}
+.operation-condition .details{
+    width:60%;
+    margin:0 auto;
+    font-size:18px;
+    color: #696D6F;
+}
+.operation-condition img{
+    width: 260px;
+}
+.operation-condition .special {
+    padding: 17% 0 0 0;
+    font-size: 16px;
+    color: #FFBA02;
+}
+.operation-condition .special p:nth-of-type(1){
+    font-size: 40px;
+}
+.alarm-bg {
+    width: 100%;
+    padding:160px 80px 220px 0;
+    background: url('../img/app/告警_bg.png') no-repeat;
+    text-align: right;
+    color: #fff;
+}
+.alarm-bg .feature-title{
+    padding-bottom:15px;
+}
+.alarm-bg p {
+    margin-left: 63%;
+    opacity: 0.8;
+    width: 37%;
+}
+.download-app {
+    text-align: center;
+    margin:40px 0;
+}
+.download-app  i {
+    display: inline-block;
+    width: 26px;
+    height:30px;
+    vertical-align: middle;
+    margin: -5px 5px 0 0;
+}
+.download-app dl{
+    border:1px solid rgba(237,237,237,1);
+}
+.download-app dl:nth-of-type(1){
+    margin: 0 15px 0 30px;
+}
+.download-app dl:nth-of-type(2){
+    margin: 0 30px 0 15px;
+}
+.download-app dt {
+    margin-bottom: 22px;
+    width: 232px;
+    height: 56px;
+    background: #424446;
+    color: #ffffff;
+    line-height: 56px;
+    font-weight:100;
+    font-size:16px;
+}
+.download-app dd {
+    width: 190px;
+    height:190px;
+    margin:0 auto;
+}
+.download-app .android-app i{
+    background: url("../img/app/android.png") no-repeat;
+}
+.download-app .ios-app i{
+    background: url("../img/app/ios.png") no-repeat;
+}
+.download-app .android-app dd{
+    background: url("../img/app/qr_android.png") no-repeat;
+}
+.download-app .ios-app dd{
+    background: url("../img/app/qr_ios.png") no-repeat;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width:560px;
+        height:454px;
+        margin: 20% auto;
+    }
+}
+.modal-open .modal{
+    overflow: hidden;
+}
