@@ -1,0 +1,22 @@
+.suspension {
+    width: 48px;
+    height: 179px;
+    position: absolute;
+    right: 30px;
+    bottom: 95px;
+}
+.suspension>p {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+.suspension img {
+    width: 26px;
+    height: 26px;
+}
+.back-top {
+    margin-top: 35px;
+}
