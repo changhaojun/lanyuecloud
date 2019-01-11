@@ -31,8 +31,8 @@ body{
     color: #696D6F;
     padding-top:5px;
 }
-.plat-common{
-    margin:0 auto;
+.plat-common {
+    margin: 0 auto;
 }
 .plat-banner{
     padding-top:3%;
@@ -80,9 +80,11 @@ body{
 }
 .attetion {
     margin: 0 auto;
-    position: relative;
-    height: 480px;
     margin:96px 0 166px;
+}
+.attention-heat{
+    height: 480px;
+    position: relative;
 }
 .attention-bg {
     width: 100%;
