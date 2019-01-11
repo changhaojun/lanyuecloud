@@ -1,0 +1,56 @@
+body,html,
+h1,
+h2,
+h3,
+ul,
+p,
+label,div,ol,ul,h1,h2,h3,h4,h5,h6,header,nav,article,footer,dl,dd,dt,tr,th,td{
+	margin: 0;
+	padding: 0;
+}
+
+body *{
+	font-family: SourceHanSansCN-Medium, 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
+
+li{
+	list-style: none;
+}
+
+button,
+input,
+select{
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	outline: none;
+}
+select{
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner{
+	padding: 0;
+}
+
+/* img {
+	display: block;
+	border: none;
+	width: 100%;
+	height: 100%;
+} */
+
+a,u{
+	text-decoration: none;
+}
+b,
+strong{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
