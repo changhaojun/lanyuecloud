@@ -61,10 +61,10 @@ i,em{
     width: 100%;
     height: 424px;
     padding-top: 120px;
-    background-image: url(../images/zoo_bg1.png);
-    -webkit-background-image: url(../images/zoo_bg1.png);
-    -moz-background-image: url(../images/zoo_bg1.png);
-    -ms-background-image: url(../images/zoo_bg1.png);
+    background-image: url(../images/zoology-bg1.png);
+    -webkit-background-image: url(../images/zoology-bg1.png);
+    -moz-background-image: url(../images/zoology-bg1.png);
+    -ms-background-image: url(../images/zoology-bg1.png);
     background-repeat:no-repeat;
     text-align: center;
 }

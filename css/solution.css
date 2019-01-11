@@ -378,7 +378,7 @@ i,em{
     border:1px solid rgba(221,221,221,1);
     padding: 24px;
 }
-.kinds .kinds-content .active-content{
+.kinds .kinds-content .choose{
     width: 100%;
     height: 100%;
 }
@@ -388,19 +388,19 @@ i,em{
 .kinds .kinds-content .active-content{
     display:list-item;
 }
- .kinds-content .active-content .map{
+ .kinds-content .choose .map{
     height: 100%;
     width: 736px;
     margin-right: 32px;
     float: left;
 }
- .kinds-content .active-content .detail{
+ .kinds-content .choose .detail{
     float: left;
     width: 382px;
     height: 100%;
     padding-top: 14px;
 }
-.active-content .detail h2{
+.kinds-content .choose .detail h2{
     width:100%;
     height:60px;
     font-size:24px;
@@ -410,7 +410,7 @@ i,em{
     line-height:60px;
     text-align: left;
 }
-.active-content .detail h3{
+.kinds-content .choose .detail h3{
     height:50px;
     font-size:18px;
     font-family:SourceHanSansCN-Medium;
@@ -419,7 +419,17 @@ i,em{
     line-height:50px;
     width: 100%;
 }
-.active-content .detail li{
+.kinds-content .choose .detail h4{
+    width: 100%;
+    font-size:14px;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.kinds-content .choose .detail li{
     line-height: 24px;
     list-style-type:disc;
     margin-left:20px; 
