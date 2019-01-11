@@ -8,29 +8,10 @@
     <link rel="stylesheet" href="./../css/reset_.css">
     <link rel="stylesheet" href="./../css/iconfont.css">
     <link rel="stylesheet" href="./../css/head.css">
-    <style>
-        html,body{
-            height:100%;
-        }
-        .iframe {
-            height: 100%;
-        }
-        .main {
-            top: 87px;
-            height: calc(100% - 87px);
-            overflow: hidden;
-            position: relative;
-        }
-        iframe {
-            border-width: 0;
-        }
-        .head {
-            background-color: #1d2329;
-        }
-    </style>
+    <link rel="stylesheet" href="./../css/iframe.css">
 </head>
 <body>
-    <div class="iframe">
+    <div style="height: 100%;">
         <div class="head">
             <div class="logo">
                 <img src="./../image/logo.png" alt="">
@@ -117,22 +98,105 @@
             </div>
         </div>
         <div class="main">
-            <iframe src="" width="100%" height="100%" name="iframe0"></iframe>
+            <iframe src="" width="100%" height="100%" name="iframe0" style="overflow:hidden; border: none;"></iframe>
+        </div>
+
+        <!-- 全局悬浮 -->
+        <div class="suspension">
+            <ul>
+                <li>
+                    <div class="li-box">
+                        <img src="./../image/suspen_1.png" alt="">
+                    </div>
+                    <div class="suspension-content photo">
+                        <div class="customer">
+                            <div class="customer-left pull-left"><img src="./../image/phone.png" alt=""></div>
+                            <div class="customer-right pull-left">
+                                <label for="">售前咨询电话</label>
+                                <p class="right-num">010-64934568</p>
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <div class="customer-left pull-left"><img src="./../image/qq.png" alt=""></div>
+                            <div class="customer-right pull-left">
+                                <label for="">在线客服</label>
+                                <p class="right-num">
+                                    <a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=676369430&site=qq&menu=yes">676369430</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <div class="customer-left pull-left"><img src="./../image/consulting.png" alt=""></div>
+                            <div class="customer-right pull-left">
+                                <label for="">合作咨询</label>
+                                <p class="right-num">
+                                    <a>填写资料</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <div class="customer-left pull-left"><img src="./../image/em.png" alt=""></div>
+                            <div class="customer-right pull-left">
+                                <label for="">E-mail</label>
+                                <p class="right-num">
+                                    <a href="mailto:676369430@qq.com"> sales@finfosoft.com</a>
+                                </p>
+                            </div>
+                        </div>    
+                    </div>
+                </li>
+                <li>
+                    <div class="li-box">
+                        <img src="./../image/suspen_2.png" alt="">
+                    </div>
+                    <div class="suspension-content center">
+                        <div class="qr_">
+                            <img class="qr-code" src="./../image/qr_code.png" alt="">
+                        </div>
+                        <span class="qr-title">扫一扫关注二维码</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-box back-top">
+                        <img src="./../image/suspen_3.png" alt="">
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 
     <script src="./../plugins/jquery/jquery-1.11.3.min.js"></script>
     <script src="./../js/page_jump.js"></script>
     <script>
-        init();
-        function init() {
-            const href = window.sessionStorage.getItem('href');
-            let currentIndex = Number(window.sessionStorage.getItem('currentIndex'));
-            currentIndex--;
+        (function() {
+            let App = {
+                init: function() {
+                    const href = window.sessionStorage.getItem('href');
+                    let currentIndex = Number(window.sessionStorage.getItem('currentIndex'));
+                    currentIndex--;
 
-            $('iframe').attr('src', href);
-            $('.menu>ul>li').eq(currentIndex).find('>a').addClass('menuActive');
-        }
+                    $('iframe').attr('src', href);
+                    $('.menu>ul>li').eq(currentIndex).find('>a').addClass('menuActive');
+                    this.backTop();
+                },
+                addActive: function() {
+                    let e = Number(event.target.getAttribute('data-e'));
+                    e--;
+                    $('.menu>ul>li a').removeClass('menuActive');
+                    $('.menu>ul>li').eq(e).find('>a').addClass('menuActive');
+                },
+                backTop: function() {
+                    $('.back-top').click(function() {
+                        console.log(1);
+                        $('body,html').animate({
+                            scrollTop: 0
+                        },
+                        1000);
+                    })
+                }
+            }
+            App.init();
+        })();
         function addActive(event) {
             let e = Number(event.target.getAttribute('data-e'));
             e--;

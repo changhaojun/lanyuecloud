@@ -113,6 +113,8 @@
     color: #ffffff;
     display: inline-block;
     width: 220px;
+    height: 100%;
+    line-height: 64px;
 }
 .block-title>span {
     display: none;
