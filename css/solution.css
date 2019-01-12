@@ -93,7 +93,7 @@ i,em{
     opacity:0.75;
     margin-top: 24px;
 }
-.top-banner div a{
+.top-banner div span{
     display:inline-block;
     width:226px;
     height:56px;
@@ -106,6 +106,10 @@ i,em{
     font-size:20px;
     line-height:56px;
     text-align: center;
+    cursor: pointer;
+}
+.top-banner div span:hover{
+    background:rgba(23,130,255,0.8);
 }
 /*introduce*/
 .introduce{

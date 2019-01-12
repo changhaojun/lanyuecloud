@@ -5,8 +5,8 @@ function pageJump(event) {
     window.sessionStorage.setItem('href', href);
     window.sessionStorage.setItem('currentIndex', currentIndex);
     if(href == 'home.html') {
-        window.location.href = href;
+        window.location.href = '../' + href;
     }else {
-        window.location.href = 'iframe.html';
+        window.location.href = './page/iframe.html';
     }
 }
