@@ -178,3 +178,22 @@
     color: #fcb801;
     border: 1px solid #fcb801;
 }
+
+
+@media (max-width: 1366px) {
+    .title-ul>li {
+        height: 44px;
+    }
+    .block-title>a {
+        line-height: 44px;
+    }
+    .title-box {
+        padding: 10px 0;
+    }
+    .block-content p {
+        margin: 20px 0;
+    }
+    .block-content a {
+        margin: 0  10px 10px 0;
+    }
+}
