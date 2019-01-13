@@ -567,7 +567,6 @@
             const main = document.getElementById("main");
             const hei = document.body.clientHeight;
             const wid = document.body.clientWidth;
-            console.log(wid)
             const footerHeight = document.querySelector('.footer').clientHeight;
             let mark = 0;
             let timer = null;
@@ -630,10 +629,7 @@
                         if(mark === oUl.children.length) {
                             mark = 0;
                         }
-                        const oi = [].slice.call(document.querySelectorAll('.progress-bar i'));
-                        for(let index in oi) {
-                            oi[index].style.width = 0;
-                        }
+                        $('.progress-bar i').css('width', 0);
                         $('.progress-bar span i').eq(mark).animate({width: 43 + 'px'}, 7000);
                         oUl.appendChild(oLi);
                         oUl.style.left = 0;
@@ -802,6 +798,12 @@
                             head.style.background = '#1d2329';
                         }
                         toPage(now);
+                        // if(index == 3) {
+                        //     console.log(111111111)
+                        //     $('.switch-point>li>span').css('background', '#cccccc');
+                        //     $('.switch-point>li.point-active').css('border-color', '#cccccc');
+                        //     // $('.point-active>span').css({'border-color': '#cccccc', 'background': '#cccccc'});
+                        // }
                     })
                 },
                 backTop: function() {
