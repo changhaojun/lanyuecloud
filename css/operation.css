@@ -94,7 +94,7 @@ i,em{
     line-height:24px;
     margin-top: 24px;
 }
-.top-banner div a{
+.top-banner div span{
     display:inline-block;
     width:226px;
     height:56px;
@@ -106,6 +106,10 @@ i,em{
     font-size:20px;
     line-height:56px;
     text-align: center;
+    cursor: pointer;
+}
+.top-banner div span:hover{
+    background:rgba(24,72,128,.8);
 }
 .top-banner div a img{
     margin-bottom: 2px;
@@ -149,7 +153,7 @@ i,em{
     opacity:0.8;
     width: 478px;
     line-height: 32px;
-    margin-top: 28px;
+    margin-top: 20px;
 }
 .focus .foucu-check div{
     position: absolute;
@@ -392,3 +396,56 @@ i,em{
     line-height:20px;
     margin-top: 15px;
 }
+
+
+/*弹框*/
+.modal-dialog{
+    margin-top: 250px;
+    width: 560px;
+    height: 454px;
+}
+#myModalLabel{
+    font-weight: 600;
+}
+.download-app {
+    text-align: center;
+    margin:40px 0;
+}
+.download-app  i {
+    display: inline-block;
+    width: 26px;
+    height:30px;
+    vertical-align: middle;
+    margin: -5px 5px 0 0;
+}
+
+.download-app dl:nth-of-type(1){
+    margin: 0 15px 0 30px;
+}
+.download-app dl:nth-of-type(2){
+    margin: 0 30px 0 15px;
+}
+.download-app dt {
+    margin-bottom: 22px;
+    width: 232px;
+    height: 56px;
+    background: #424446;
+    color: #ffffff;
+    line-height: 56px;
+    font-weight:100;
+    font-size:16px;
+    margin: 0 auto;
+}
+.download-app dd {
+    width: 190px;
+    height:190px;
+    margin:0 auto;
+}
+.download-app .android-app i{
+    background: url("../img/app/android.png") no-repeat;
+}
+.download-app .android-app dd{
+    background: url("../img/app/qr_android.png") no-repeat;
+    margin-top: 20px;
+}
+
