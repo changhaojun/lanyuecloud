@@ -6,7 +6,7 @@
     position: fixed;
     z-index: 999;
     color: #ffffff;
-    border-bottom: 1px solid #7b6565;
+    border-bottom: 1px solid rgba(23,31,50,0.05);
 }
 .head>div {
     height: 100%;
@@ -177,4 +177,23 @@
     text-align: center;
     color: #fcb801;
     border: 1px solid #fcb801;
+}
+
+
+@media (max-width: 1366px) {
+    .title-ul>li {
+        height: 44px;
+    }
+    .block-title>a {
+        line-height: 44px;
+    }
+    .title-box {
+        padding: 10px 0;
+    }
+    .block-content p {
+        margin: 20px 0;
+    }
+    .block-content a {
+        margin: 0  10px 10px 0;
+    }
 }
