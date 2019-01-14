@@ -68,7 +68,7 @@ i,em{
     -ms-background-image: url(../images/operation-bg1.png);
     text-align: left;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-size:cover;
 }
 .top-banner div{
     width: 1200px;
