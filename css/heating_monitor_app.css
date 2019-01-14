@@ -196,7 +196,7 @@ body{
     .modal-dialog {
         width:560px;
         height:454px;
-        margin: 20% auto;
+        margin: 10% auto;
     }
 }
 .modal-open .modal{
