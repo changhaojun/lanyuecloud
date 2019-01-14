@@ -17,9 +17,9 @@ html,body{
 .suspension {
     position: absolute;
     width: 48px;
-    height: 179px;
+    height: 96px;
     right: 60px;
-    bottom: 95px;
+    bottom: 178px;
     z-index: 99999;  
 }
 .suspension>ul>li {
@@ -28,9 +28,9 @@ html,body{
     cursor: pointer;
     position: relative;
 }
-.suspension>ul>li:last-child {
+/* .suspension>ul>li:last-child {
     margin-top: 35px;
-}
+} */
 .suspension>ul>li>.li-box {
     width: 48px;
     height: 100%;
@@ -40,8 +40,8 @@ html,body{
     align-items: center;
 }
 .suspension>ul>li>.suspension-content {
-    width: 220px;
-    padding: 20px;
+    width: 230px;
+    padding: 10px;
     background: #ffffff;
     position: absolute;
     bottom: 0;
@@ -84,7 +84,7 @@ html,body{
     color: #00a2ff;
 }
 .suspension>ul>li>.photo {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 .suspension>ul>li>.photo>.customer {
     height: 44px;
@@ -123,4 +123,82 @@ html,body{
 }
 .pull-right {
     float: right;
+}
+
+
+@media (max-width: 1366px) {
+    #home>.arrow {
+        left: calc(50% - 20px);
+        width: 40px;
+        height: 40px;
+    }
+    .footer {
+        height: 272px;
+    }
+    .address>span {
+        font-size: 22px;
+    }
+
+    .switch-point {
+        top: calc(50% - 118px);
+    }
+    .switch-point>li {
+        width: 20px;
+        height: 20px;
+        margin: 5px 0;
+    }
+    .switch-point>li>span {
+        width: 8px;
+        height: 8px;
+    }
+
+    .suspension {
+        width: 38px;
+    }
+    .suspension>ul>li {
+        height: 38px;
+        padding-left: 15px;
+    }
+
+    .suspension>ul>li>.li-box {
+        width: 38px;
+    }
+    .suspension>ul>li>.li-box>img {
+        width: 16px;
+    }
+    .suspension>ul>li>.suspension-content {
+        right: 38px;
+        width: 200px;
+    }
+    .suspension>ul>li>.photo>.customer {
+        padding: 10px 4px;
+        font-size: 14px;
+        height: 40px;
+    }
+    .suspension>ul>li>.photo {
+        padding: 0 10px;
+    }
+    .suspension>ul>li>.photo>.customer:nth-child(1) .right-num {
+        font-size: 16px;
+    }
+    .customer-left>img {
+        width: 30px;
+        height: 30px;
+    }
+    .suspension-content>.qr_>.qr-code {
+        width: 195px;
+        height: 195px;
+    }
+    .suspension>ul>li>.suspension-content {
+        padding: 10px;
+    }
+    .qr-title {
+        font-size: 14px;
+    }
+    .suspension {
+        bottom: 78px;
+    }
+    .suspension>ul>li>.suspension-content::after {
+        bottom: 15px
+    }
 }
