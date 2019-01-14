@@ -10,7 +10,7 @@ label,div,ol,ul,h1,h2,h3,h4,h5,h6,header,nav,article,footer,dl,dd,dt,tr,th,td{
 }
 
 body *{
-    font-family: 'microsoft yahei', Arial, Helvetica, sans-serif;
+    font-family:SourceHanSansCN-Medium, 'microsoft yahei', Arial, Helvetica, sans-serif;
 }
 body{
     background:rgba(255,255,255,1);
@@ -98,7 +98,7 @@ i,em{
     display:inline-block;
     width:226px;
     height:56px;
-    background:rgba(24,72,128,1);
+    background:rgba(24,72,128,0.8);
     border:1px solid rgba(23,130,255,1);
     margin: 0 auto;
     margin-top: 40px;
@@ -109,7 +109,7 @@ i,em{
     cursor: pointer;
 }
 .top-banner div span:hover{
-    background:rgba(24,72,128,.8);
+    background:rgba(24,72,128,1);
 }
 .top-banner div a img{
     margin-bottom: 2px;
