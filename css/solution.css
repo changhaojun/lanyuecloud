@@ -49,6 +49,7 @@ a:hover{
 a,u{
 	text-decoration: none;
 }
+a:focus{text-decoration: none};
 b,
 strong{
 	font-weight: normal;
@@ -93,7 +94,7 @@ i,em{
     opacity:0.75;
     margin-top: 24px;
 }
-.top-banner div span{
+.top-banner div a{
     display:inline-block;
     width:226px;
     height:56px;
@@ -108,7 +109,7 @@ i,em{
     text-align: center;
     cursor: pointer;
 }
-.top-banner div span:hover{
+.top-banner div a:hover{
     background:rgba(23,130,255,1);
 }
 /*introduce*/

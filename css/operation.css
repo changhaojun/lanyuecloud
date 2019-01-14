@@ -448,4 +448,17 @@ i,em{
     background: url("../img/app/qr_android.png") no-repeat;
     margin-top: 20px;
 }
-
+@media screen and (max-height: 768px) {
+    .modal-dialog{
+        margin-top: 120px;
+        width: 520px;
+        height: 420px;
+    }
+}
+@media screen and (max-height: 960px) and (min-height: 768px) {
+    .modal-dialog{
+        margin-top: 200px;
+        width: 520px;
+        height: 420px;
+    }
+}

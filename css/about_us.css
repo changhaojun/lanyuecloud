@@ -252,7 +252,7 @@ i,em{
 .servers ul li .servers-online div{
     display: inline-block;
 }
-.servers ul li .servers-online span{
+.servers ul li .servers-online a{
     display: inline-block;
     border:1px solid rgba(212,216,224,1);
     border-radius:3px;
