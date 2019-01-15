@@ -151,3 +151,8 @@
     margin-top: 5px;
     margin-left: 30px;
 }
+@media (min-width: 768px){
+    .modal-dialog {
+        width:50%;
+    }
+}
