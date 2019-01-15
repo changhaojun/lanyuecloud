@@ -49,6 +49,7 @@ a:hover{
 a,u{
 	text-decoration: none;
 }
+a:focus{text-decoration: none};
 b,
 strong{
 	font-weight: normal;
@@ -59,13 +60,14 @@ i,em{
 /*banner*/
 .top-banner{
     width: 100%;
-    height: 512px;
-    padding-top: 210px;
+    height: 424px;
+    padding-top: 120px;
     background-image: url(../images/summary_bg.png);
     -webkit-background-image: url(../images/summary_bg.png);
     -moz-background-image: url(../images/summary_bg.png);
     -ms-background-image: url(../images/summary_bg.png);
     text-align: left;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .top-banner div{
@@ -93,7 +95,7 @@ i,em{
     opacity:0.75;
     margin-top: 24px;
 }
-.top-banner div span{
+.top-banner div a{
     display:inline-block;
     width:226px;
     height:56px;
@@ -108,7 +110,7 @@ i,em{
     text-align: center;
     cursor: pointer;
 }
-.top-banner div span:hover{
+.top-banner div a:hover{
     background:rgba(23,130,255,1);
 }
 /*summary*/
@@ -199,12 +201,12 @@ i,em{
 .conditions .kinds .kinds-name li{
     cursor:pointer;
     width: 120px;
-    height: 50px;
+    height: 60px;
     float: left;
     font-size:18px;
     font-family:SourceHanSansCN-Normal;
     font-weight:400;
-    line-height:50px;
+    line-height:60px;
     text-align: center;
     margin: 0 50px;
 }
@@ -374,7 +376,7 @@ i,em{
 }
 .function .method{
     width: 1200px;
-    height: 100px;
+    height: 104px;
     margin: 0 auto;
     margin-top: 50px;
     padding:  0 440px;
@@ -408,7 +410,7 @@ i,em{
     color: rgba(67,135,252,1);
 }
 .function .method .active{
-    border-bottom: 1px solid rgba(67,135,252,1);
+    border-bottom: 2px solid rgba(67,135,252,1);
 }
  .content-choose{
     width: 100%;
@@ -490,8 +492,8 @@ i,em{
     display:inline-block;
     width:240px;
     height:40px;
-    border:1px solid rgba(23,130,255,1);
-    color: rgba(23,130,255,1) ;
+    border:1px solid #4387FC;
+    color: #4387FC ;
     opacity:0.75;
     margin: 0 auto;
     margin-top: 18px;
@@ -527,7 +529,8 @@ i,em{
     line-height: 30px;
     text-align: left;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
 
 }
 .framework img{

@@ -1,0 +1,23 @@
+a:focus{
+    text-decoration: none;
+}
+.head>.util {
+    position: absolute;
+    right: 40px;
+    line-height: 88px;
+}
+.head>.util span {
+    display: inline-block;
+    cursor: pointer;
+}
+.login {
+    margin-right: 30px;
+}
+.register {
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #fcb801;
+    border: 1px solid #fcb801;
+}
