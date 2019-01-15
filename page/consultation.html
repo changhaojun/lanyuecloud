@@ -9,16 +9,70 @@
     <link rel="stylesheet" href="./../css/head.css">
     <link rel="stylesheet" href="./../css/iframe.css">
     <link rel="stylesheet" href="../css/font-icon-us/iconfont.css">
+    <link rel="stylesheet" href="../css/consultation.css">
+    <link rel="stylesheet" href="//res.layui.com/layui/dist/css/layui.css"  media="all">
 </head>
 <body>
     <div class="head">
             <div class="logo">
                 <img src="./../image/logo.png" alt="">
             </div>
-            <div class="index-banner">
+            <a class="index-banner" href="">
                 <i class="iconfont icon-shouye"></i>
                 <span >首页</span>
-            </div>
+            </a>
+    </div>
+    <div class="content">
+        <div class="content-outer">
+            <h2>揽月云合作咨询</h2>
+            <p>
+                填写信息即可立即获取《揽月云生态解决方案》，客户经理将在一个工作日内联系并提供咨询服务
+            </p>
+            <form id="myform" action="##" method="post" name='myform' onsubmit="return false">
+                <ul class="content-inner">
+                    <li class="content-inner-left">
+                        <ul>
+                            <li>
+                                公司名称 <span>*</span>
+                            </li>
+                            <li>
+                                    联系人姓名 <span>*</span>
+                            </li>
+                            <li>
+                                    联系方式 <span>*</span>
+                            </li>
+                            <li>
+                                    滑块验证 <span>*</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li  class="content-inner-right">
+                        <ul>
+                            <li><input type="text" placeholder="输入您的企业名称" class="user-company" name="userCompany" value=""></li>
+                            <li class="company-alarm">企业名称不能为空</li>
+                            <li><input type="text" placeholder="请输入联系人姓名" class="user-name" name="userName" value=""></li>
+                            <li class="user-alarm">联系人不能为空</li>
+                            <li><input type="text" placeholder="输入您的手机号" class="phone-num" name="phoneNum" value="" ></li>
+                            <li class="phone-alarm">请输入正确号码</li>
+                            <li>
+                                <div class="outer">
+                                        <div class="filter-box"></div>
+                                        <span>
+                                            轻按住滑块，拖动到最右边
+                                        </span>
+                                        <div class="inner"><i class="iconfont icon-youshuangjiantou"></i></div>
+                                </div>
+                            </li>
+                            <li class="slider-alarm">请滑动滑块验证</li>
+                        </ul>
+                    </li>
+                </ul>
+                <input type="button" name='submit' value="提交" onclick='check(this.form)' class="button">
+            </form>
         </div>
+    </div>
 </body>
+<script src="../plugins/jquery/jquery-1.11.3.min.js"></script>
+<script src="../plugins/bootstarp/js/bootstrap.min.js"></script>
+<script src="../js/consultation.js"></script>
 </html>
