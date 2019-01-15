@@ -1112,6 +1112,85 @@ html,body{
 
 
 
+/* @media (max-width: 320px) {
+    html {
+        font-size: 62.5%;
+    }
+    .banner-ul>li>span {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.4rem;
+        left: calc(50% - 5rem);
+        top: calc(50% - 1.5rem);
+    }
+    .warp {
+        width: calc(100% - 2rem);
+    }
+    /* .screen-2 */
+    .screen-2 .top-content {
+        width: 100%;
+        padding: 6rem 0 0;
+    }
+    .top-content .big-title {
+        font-size: 2.0rem;
+    }
+    .top-content .big-describe {
+        font-size: 1.4rem;
+    }
+    .screen-2 .bottom-content {
+        display: none
+    }
+
+    /* .screen-3 */
+    .product-service-top {
+        height: 144px;
+    }
+    .product-service-top .big-title {
+        font-size: 2.0rem;
+        margin: 1rem 0 0;
+    }
+    .top-ul {
+        width: 100%;
+    }
+    .top-ul>li p {
+        display: none;
+    }
+    .top-ul>li span {
+        width: 100%;
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid transparent;
+    }
+    .bottom-content li {
+        padding: 1.5rem 1rem 0;
+    }
+    .product-service-bottom {
+        height: calc(100% - 144px);
+    }
+    .bottom-ul>li {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .bottom-ul>li:nth-child(1) {
+        margin-right: 0;
+    }
+    .li-content {
+        padding: 1rem 1.5rem;
+    }
+    .li-content>p {
+        margin-bottom: 0.5rem;
+        height: 50px;
+        overflow: hidden;
+    }
+    .li-content>i {
+        height: 30px;
+        line-height: 30px;
+    }
+} */
+
+
+
+
 
 
 
