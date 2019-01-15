@@ -1,6 +1,9 @@
 a:focus{
     text-decoration: none;
 }
+.head{
+    position: static;
+}
 .head>.util {
     position: absolute;
     right: 40px;
@@ -8,16 +11,198 @@ a:focus{
 }
 .head>.util span {
     display: inline-block;
-    cursor: pointer;
 }
-.login {
-    margin-right: 30px;
-}
-.register {
+
+.index-banner {
+    display: block;
     width: 120px;
-    height: 42px;
-    line-height: 42px;
+    height: 42px !important;
     text-align: center;
-    color: #fcb801;
-    border: 1px solid #fcb801;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size:16px ;
+    line-height: 42px;
+    margin-top: 23px;
+}
+.index-banner .icon-shouye{
+    font-size: 27px;
+    vertical-align: middle;
+    position:relative;
+    top:-3px;
+}
+
+
+.content{
+    width: 100%;
+    height:calc(100% - 88px);
+    background:rgba(240,243,250,1);
+    padding-top: 80px;
+    text-align: center;
+}
+.content .content-outer{
+    width: 1200px;
+    height:811px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(230,230,230,1);
+    margin: 0 auto;
+
+}
+.content .content-outer h2{
+    width:100%;
+    height:60px;
+    font-size:30px;
+    font-family:SourceHanSansCN-Medium;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:60px;
+    margin: 0 auto;
+    margin-top: 56px;
+}
+.content .content-outer p{
+    margin-top: 18px;
+    width:100%;;
+    height:24px;
+    font-size:16px;
+    font-family:SourceHanSansCN-Normal;
+    font-weight:400;
+    color:rgba(91,94,101,1);
+    line-height:24px;
+}
+form{
+    width: 100%;
+    height: 350px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+form .content-inner{
+    width: 100%;
+    height: 290px;
+}
+form .content-inner:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+ .content-inner-right,.content-inner-left{
+    float: left;
+    height: 100%;
+    height: 100%;
+    line-height: 40px;
+    color: #666666;
+}
+.content-inner-left{
+    text-align: right;
+    width: 38.75%;
+    padding-right: 16px;
+}
+.content-inner-left span{
+    color: rgba(220,60,47,1);
+}
+.content-inner-left li{
+    height: 100%;
+    line-height: 48px;
+    margin-bottom: 32px;
+}
+.content-inner-right{
+    text-align: right;
+    width: 40%;
+}
+
+.content-inner-right li:nth-child(odd){
+    width: 320px;
+    height: 46px;
+    border:1px solid rgba(204,204,204,1);
+}
+.content-inner-right li:nth-child(even){
+    height: 32px;
+    border: none;
+    color: rgba(220,60,47,1);
+    text-align: left;
+    font-size: 14px;
+    line-height: 32px;
+    visibility:hidden;
+}
+.content-inner-right li input{
+    width:calc(100% - 20px);
+    height: 100%;
+    padding-left: 20px;
+}
+input::-webkit-input-placeholder {
+    color:    #BFBABA;
+}
+input:-moz-placeholder { 
+   color:    #BFBABA;
+}
+input::-moz-placeholder { 
+   color:    #BFBABA;
+}
+input:-ms-input-placeholder {
+   color:    #BFBABA;
+}
+.content-inner-right li .outer{
+    position: relative;
+    width: 320px;
+    height: 46px;
+    line-height: 46px;
+    background: #ccc9c9;
+}
+.outer span,.filter-box,.inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.outer span{
+    display: block;
+    padding:0  0 0 36px;
+    width: calc(100% - 36px);
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+}
+.filter-box{
+    width: 0;
+    height: 100%;
+    background: #4387fc;
+    z-index: 9;
+}
+.outer.act span{
+    padding:0 36px 0 0;
+}
+.inner{
+    width: 48px;
+    height: 46px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    z-index: 10;
+    font-weight: bold;
+    color: #929292;
+    line-height: 46px;
+}
+.iconfont{
+    font-size: 18px;
+}
+.outer.act .inner{
+    color: #4387fc;
+}
+.outer.act span{
+    z-index: 99;
+}
+.button{
+    width:152px;
+    height:48px;
+    background:rgba(252,184,1,1);
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px;
+    color: #333333;
+    cursor: pointer;
+    margin-left: 30px;
 }
