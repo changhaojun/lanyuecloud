@@ -66,7 +66,7 @@ function check(form) {
           },1500);
     }else{
         var  data ={
-            phone:"15389073800",
+            phone:"13720759061",
             "templateCode":"SMS_155570518",
             "customer":$('.user-company').val(),
             "contact":$('.user-name').val(),
@@ -81,9 +81,26 @@ function check(form) {
                 url: "http://114.215.46.56:17737/emitCode" ,//url
                 data: data,
                 success:function(result){
+                    layer.open({
+                        type: 1
+                        ,offset: 't', //具体配置参考：offset参数项
+                        area:'380px'
+                        ,content: '<p style="padding: 60px 80px; line-height:24px">信息已发送，稍后客户经理将联系您!</p>'
+                        ,btn: '确认'
+                        ,btnAlign: 'c' //按钮居中
+                        ,shade: .6 //不显示遮罩
+                        ,yes: function(){
+                          layer.closeAll();
+                          that.location.reload();
+                          selfs.location.reload();
+                        },
+                        cancel: function(){ 
+                            layer.closeAll();
+                            that.location.reload();
+                            selfs.location.reload();
+                          } 
+                      });
                     
-                    that.location.reload();
-                    selfs.location.reload();
                 }
             });
 
