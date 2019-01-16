@@ -1,6 +1,5 @@
 $(function() {
     function backTop() {
-        let top;
         $('.back-top').hide();
         $(window).scroll(function() {
             let top = $(document).scrollTop();

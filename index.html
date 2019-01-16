@@ -91,6 +91,44 @@
                 <span class="register">免费注册</span>
             </div> -->
         </div>
+        <!-- <div class="head-mobile">
+            <div>
+                <span>揽月云</span>
+                <span class="iconfont icon-caidan folding"></span>
+            </div>
+            <ul class="menu-mobile">
+                <li><a href="javascript:;" class="menuActive">首页</a></li>
+                <li>
+                    <a>产品与服务</a>
+                    <div class="second-menu">
+                        <div><a data-href="prodouct_platform.html" data-i="2" onclick="pageJump(event)">揽月云平台服务</a></div>
+                        <div><a data-href="platform_summary.html" data-i="2" onclick="pageJump(event)">智慧供热云平台</a></div>
+                        <div class="third-menu">
+                            <a>IoT产品模块</a>
+                            <div class="case-mobile">
+                                <p><a data-href="dtu_details.html" data-i="2" onclick="pageJump(event)">Dtu（ Gprs ）联网模块</a></p>
+                                <p><a data-href="room_temperature_details.html" data-i="2" onclick="pageJump(event)">室温采集器（nb，wifi）</a></p>
+                                <p><a data-href="valve_details.html" data-i="2" onclick="pageJump(event)">入户调控阀（nb）</a></p>
+                                <p><a data-href="lotBox_details.html" data-i="2" onclick="pageJump(event)">Iotbox（NB）数据通讯模块</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a>解决方案</a>
+                    <div class="second-menu">
+                        <div><a data-href="solution.html" data-i="3" onclick="pageJump(event)">城市智慧供热解决方案</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a data-href="zoology.html" data-i="4" onclick="pageJump(event)">揽月云生态</a>
+                </li>
+                <li>
+                    <a data-href="about_us.html" data-i="5" onclick="pageJump(event)">关于我们</a>
+                </li>
+            </ul>
+            
+        </div> -->
         <div id="main">
             <div class="screen screen-first screen-1">
                 <ul class="banner-ul">
@@ -504,8 +542,10 @@
                             <div class="customer-left pull-left"><img src="./image/consulting.png" alt=""></div>
                             <div class="customer-right pull-left">
                                 <label for="">合作咨询</label>
-                                <p class="right-num"><a>填写资料</a>
-                                    </p>
+                                <p class="right-num">
+                                    <!-- <a data-href="consultation.html" data-i="10" onclick="pageJump(event)">填写资料</a> -->
+                                    <a href="./page/consultation.html" target="_blank">填写资料</a>
+                                </p>
                             </div>
                         </div>
                         <div class="customer">
@@ -542,6 +582,7 @@
     <script src="./plugins/jquery/jquery-1.11.3.min.js"></script>
     <script src="./js/tab_switch.js"></script>
     <script src="./js/page_jump.js"></script>
+    <!-- <script src="./js/mobile.js"></script> -->
     <script>
         (function() {
             //如果不加时间控制，滚动会过度灵敏，一次翻好几屏
@@ -754,6 +795,7 @@
                         console.log(now)
                         if(now < 0) {
                             head.style.background = '#1d2329';
+                            $('.head-mobile').css('background', '#1d2329');
                         }
                         toPage(now);
                     })
@@ -793,6 +835,7 @@
                             if(eq == 1) {
                                 now = 0;
                                 head.style.background = 'rgba(0, 0, 0, 0.2)';
+                                $('.head-mobile').css('background', 'rgba(0, 0, 0, 0.2)');
                             }
                         }
                         currentEq = eq;
@@ -800,6 +843,7 @@
                         console.log(now);
                         if(now < 0) {
                             head.style.background = '#1d2329';
+                            $('.head-mobile').css('background', '#1d2329');
                         }
                         toPage(now);
                     })
@@ -811,6 +855,7 @@
                         currentEq = 1;
                         now = 0;
                         head.style.background = 'rgba(0, 0, 0, 0.2)';
+                        $('.head-mobile').css('background', 'rgba(0, 0, 0, 0.2)');
                         $('.switch-point>li').removeClass('point-active');
                         $('.switch-point>li').eq(0).addClass('point-active');
                         toPage(now);
@@ -852,6 +897,7 @@
                         switchPoint();
                         if(now < 0) {
                             head.style.background = '#1d2329';
+                            $('.head-mobile').css('background', '#1d2329');
                         }
                         toPage(now);
                         $('.back-top').show();
@@ -879,6 +925,7 @@
                         switchPoint();
                         if(now == 0) {
                             head.style.background = 'rgba(0, 0, 0, 0.2)';
+                            $('.head-mobile').css('background', 'rgba(0, 0, 0, 0.2)');
                             $('.back-top').hide();
                         }
                         toPage(now);
