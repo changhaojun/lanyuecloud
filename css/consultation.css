@@ -206,3 +206,7 @@ input:-ms-input-placeholder {
     cursor: pointer;
     margin-left: 30px;
 }
+
+.layui-layer{
+    top:  200px !important;
+}
