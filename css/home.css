@@ -1126,7 +1126,7 @@ html,body{
     .warp {
         width: calc(100% - 2rem);
     }
-    /* .screen-2 */
+    
     .screen-2 .top-content {
         width: 100%;
         padding: 6rem 0 0;
@@ -1141,7 +1141,7 @@ html,body{
         display: none
     }
 
-    /* .screen-3 */
+    
     .product-service-top {
         height: 144px;
     }
