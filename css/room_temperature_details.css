@@ -1,0 +1,396 @@
+@media (min-width: 1366px) {
+    .common-width{
+        width:1300px;
+    }
+}
+.common-width{
+    margin:0 auto;
+    position: relative;
+}
+.room-temperature-detial .detial-main{
+    background: #DBDBDB;
+    padding:115px 0 144px 0;
+}
+.room-temperature-detial .project-img {
+    width: 362px;
+    height:360px;
+    background: url("../img/temperature/img_product_01.png");
+}
+.room-temperature-detial .project-info{
+    margin:72px 0 0 90px;
+}
+.room-temperature-detial .feature-title{
+    font-size:35px;
+    /*font-family:SourceHanSansCN-Bold;*/
+    font-weight:bold;
+    color:#000;
+    height:34px;
+    line-height:19px;
+}
+.room-temperature-detial .temp-con {
+    padding-bottom: 190px;
+    /*background: #fff;*/
+    overflow: hidden;
+}
+.room-temperature-detial .feature-title span{
+    color: #347AC8;
+}
+.room-temperature-detial .second-title {
+    font-size:20px;
+    font-family:SourceHanSansCN-Normal;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:27px;
+}
+.room-temperature-detial .project-info .lanyue-logo {
+    display: inline-block;
+    width: 125px;
+    vertical-align: middle;
+    margin-left: -30px;
+    height:87px;
+    float: left;
+    background: url("../img/temperature/img_ico_01.png") no-repeat center center;
+}
+.room-temperature-detial .project-info img{
+    width:100%;
+}
+.room-temperature-detial .project-info p:nth-of-type(2) {
+    height: auto;
+    overflow: hidden;
+    margin-top:50px ;
+}
+.room-temperature-detial .project-info p:nth-of-type(2) span{
+    font-size:14px;
+    height:41px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:27px;
+    opacity:0.8;
+    margin-top: 5px;
+}
+.room-temperature-detial .consultation {
+    width: 114px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0, 0, 0, .36);
+    cursor: pointer;
+    line-height: 38px;
+    text-align: center;
+    margin-top:53px;
+}
+.room-temperature-detial .consultation a{
+    font-size:18px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+}
+a:focus, a:hover{
+    text-decoration:none !important;
+}
+.detial-bg {
+    width: 686px;
+    position: absolute;
+    right: -138px;
+    z-index: 10;
+    top: 55px;
+}
+.room-temperature-detial .center{
+    text-align: center;
+}
+.little-title{
+    height:18px;
+    font-size:18px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:27px;
+}
+/*智能温度计*/
+.wifi-temp{
+    padding:72px 50px 150px ;
+}
+.wifi-temp li{
+    position: relative;
+}
+.wifi-temp .img-bg{
+    width:271px;
+    height:368px;
+    background:rgba(236,236,236,1);
+}
+.wifi-temp li:nth-of-type(1) div{
+    position: absolute;
+}
+.wifi-temp  .features-img{
+    width:450px;
+    height:249px;
+    top: 89px;
+    left: 93px;
+}
+.wifi-temp .features{
+    margin-left:115px ;
+}
+.wifi-temp .features p:nth-of-type(1),
+.nbLot-temp p:nth-of-type(1){
+    height:21px;
+    font-size:18px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:27px;
+}
+.wifi-temp .features p:nth-of-type(2){
+    margin-top:40px;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:27px;
+    opacity:0.8
+}
+.wifi-temp .features ul,.nblot-detail ul {
+    margin-top:28px;
+    overflow: hidden;
+}
+.wifi-temp .features ul li ,
+.nblot-detail ul li{
+    float: left;
+    font-size:14px;
+    height:30px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:27px;
+    opacity:0.8;
+    padding-bottom:3px;
+}
+.wifi-temp .features ul li i,.nblot-detail ul li i{
+    display: inline-block;
+    width:7px;
+    height:7px;
+    background:rgba(0,0,0,1);
+    opacity:0.47;
+    border-radius:50%;
+    vertical-align: middle;
+    margin:-3px 5px 0 0;
+}
+.nbLot-temp{
+    padding-left:72px;
+}
+.nblot-detail {
+    background:#ECECEC ;
+    margin-top: 50px;
+    padding:27px 0 20px 64px;
+    position: relative;
+}
+.nbLot-temp .nblot-detail p{
+    height:41px;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:27px;
+    opacity:0.8;
+}
+.nbLot-temp .nblot-bg {
+    width: 257px;
+    height: 329px;
+    background: url("../img/temperature/img_product_03.png") no-repeat;
+    position: absolute;
+    bottom: 0;
+    right:124px;
+}
+.nblot-detail ul li {
+    padding-left:0;
+}
+/*控温云平台*/
+.temp-platform{
+    margin-top: 126px;
+}
+.lanyue-web{
+    margin-top: 133px;
+    padding-left:64px;
+}
+.lanyue-web .lanyue-web-img{
+    width: 639px;
+    height:368px;
+    background: url("../img/temperature/img_book_01.png") no-repeat center;
+}
+.lanyue-web .lanyue-web-img img{
+    height:304px;
+    width:484px;
+    margin:0 auto;
+    margin-top: 23px;
+}
+.temp-common{
+    padding:0 0 0 50px;
+}
+.temp-common .feature-title{
+    color: #404040;
+}
+.temp-common p:nth-of-type(1){
+    height:20px;
+    font-size:20px;
+    font-weight:400;
+    color:rgba(122,122,122,1);
+    line-height:30px
+}
+.temp-common dl{
+    margin-top:50px ;
+}
+.temp-common dt{
+    height:20px;
+    font-size:20px;
+    font-weight:400;
+    color:rgba(94,98,107,1);
+    line-height:33px;
+}
+.temp-common dd{
+    height:39px;
+    font-size:14px;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(122,121,121,1);
+    line-height:24px;
+    margin-top:16px;
+}
+.margin-64{
+    padding-left:64px;
+}
+.two-net{
+    padding-top:100px;
+}
+.two-net-water{
+    margin-top:49px;
+    background: #F5F5F5;
+    text-align: center;
+}
+.water-title{
+    color: #3D464D;
+    margin-top:80px;
+    position: relative;
+}
+.water-title:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: -10px;
+    left:50%;
+    width: 44px;
+    height: 1px;
+    margin-left: -22px;
+    background: rgba(70, 70, 70, 1);
+}
+.two-net-water p{
+    height:43px;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(131,131,131,1);
+    line-height:28px;
+    padding:10px 0 84px 0;
+}
+.temp-app-main{
+    margin-top:110px;
+}
+.temp-app .little-title{
+    padding-bottom:100px;
+}
+.temp-app-bg img{
+    width: 120%;
+    margin-left:-10%;
+}
+.temp-app .temp-app-title{
+    height:34px;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(131,131,131,1);
+    line-height:18px;
+    padding-top:21px;
+}
+.footer {
+    height: 372px;
+    color: #ffffff;
+    background: #000000;
+    margin-top:115px;
+}
+.footer>.warp {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin:0 auto;
+}
+.qr {
+    width: 188px;
+    text-align: center;
+}
+.qr>img {
+    width: 100%;
+    height: 136px;
+}
+.qr>p {
+    line-height: 40px;
+}
+.address {
+    text-align: right;
+    margin-top: -40px;
+}
+.address>span {
+    font-size: 30px;
+    line-height: 60px;
+}
+.address>p>span {
+    color: rgba(255,255,255,0.54);
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+、
+.download-app {
+    text-align: center;
+    margin:40px 0;
+}
+.download-app  i {
+    display: inline-block;
+    width: 26px;
+    height:30px;
+    vertical-align: middle;
+    margin: -5px 5px 0 0;
+}
+.download-app dl{
+    border:1px solid rgba(237,237,237,1);
+    width: 232px;
+    margin:30px auto;
+    padding-bottom:22px;
+}
+.download-app dt {
+    margin-bottom: 22px;
+    width: 232px;
+    height: 56px;
+    background: #424446;
+    color: #ffffff;
+    line-height: 56px;
+    font-weight:100;
+    font-size:16px;
+    text-align: center;
+}
+.download-app dd {
+    width: 190px;
+    height:190px;
+    margin:0 auto;
+}
+.download-app .android-app i{
+    background: url("../img/app/android.png") no-repeat;
+}
+.download-app .ios-app i{
+    background: url("../img/app/ios.png") no-repeat;
+}
+.download-app .android-app dd {
+    background: url("../img/temperature/qr_code_andirod.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.download-app .ios-app dd {
+    background: url("../img/app/qr_ios.png") no-repeat;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width:400px;
+        height:454px;
+        margin: 10% auto;
+    }
+}
