@@ -10,7 +10,7 @@ label,div,ol,ul,h1,h2,h3,h4,h5,h6,header,nav,article,footer,dl,dd,dt,tr,th,td{
 }
 
 body *{
-    font-family: 'microsoft yahei', Arial, Helvetica, sans-serif;
+    font-family:SourceHanSansCN-Medium, 'microsoft yahei', Arial, Helvetica, sans-serif;
 }
 body{
     background:rgba(255,255,255,1);
@@ -88,11 +88,11 @@ i,em{
     width: 100%;
     margin-top: 24px;
 }
-.top-banner span{
+.top-banner a{
     display:inline-block;
     width:226px;
     height:56px;
-    background:rgba(23,130,255,1);
+    background:rgba(23,130,255,0.8);
     border:1px solid rgba(23,130,255,1);
     opacity:0.75;
     margin: 0 auto;
@@ -102,8 +102,8 @@ i,em{
     line-height:56px;
     cursor: pointer;
 }
-.top-banner  span:hover{
-    background:rgba(23,130,255,.8);
+.top-banner  a:hover{
+    background:rgba(23,130,255,1);
 }
 /*zoology*/
 .zoology-reason{
@@ -156,14 +156,9 @@ i,em{
     text-align: center;
     line-height: 264px;
     float: left;
-    margin: 0 20px;
+    margin: 0 30px;
 }
-.zoology-reason ul li:nth-child(1){
-    margin-left: 0px;
-}
-.zoology-reason ul li:nth-child(4){
-    margin-right: 0px;
-}
+
 .zoology-reason ul li div{
     height: 130px;
     width: 100%;
@@ -287,7 +282,6 @@ i,em{
     -moz-border-radius:3px;
     float: left;
     margin: 0 12px;
-    cursor: pointer;
 }
 
 .recruit ul li:nth-child(1){
@@ -432,7 +426,7 @@ i,em{
     color:rgba(102,102,102,1);
     line-height:24px;
 }
-.add-link span{
+.add-link a{
     display: block;
     background:rgba(24,72,128,1);
     height:56px;
@@ -444,7 +438,7 @@ i,em{
     margin-top:50px; 
     cursor: pointer;
 }
-.add-link span:hover{
+.add-link a:hover{
     box-shadow:rgba(23,130,255,0.66) 0px 0px 32px  ;
     -webkit-box-shadow:rgba(23,130,255,0.66)  0px 0px 32px  ;
     -ms-box-shadow:rgba(23,130,255,0.66) 0px 0px 32px ;

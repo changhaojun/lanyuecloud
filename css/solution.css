@@ -10,7 +10,7 @@ label,div,ol,ul,h1,h2,h3,h4,h5,h6,header,nav,article,footer,dl,dd,dt,tr,th,td{
 }
 
 body *{
-    font-family: 'microsoft yahei', Arial, Helvetica, sans-serif;
+    font-family: SourceHanSansCN-Medium,'microsoft yahei', Arial, Helvetica, sans-serif;
 }
 body{
     background:rgba(255,255,255,1);
@@ -49,6 +49,7 @@ a:hover{
 a,u{
 	text-decoration: none;
 }
+a:focus{text-decoration: none};
 b,
 strong{
 	font-weight: normal;
@@ -59,14 +60,15 @@ i,em{
 /*banner*/
 .top-banner{
     width: 100%;
-    height: 512px;
-    padding-top: 210px;
+    height: 424px;
+    padding-top: 120px;
     background-image: url(../images/solution_bg.png);
     -webkit-background-image: url(../images/solution_bg.png);
     -moz-background-image: url(../images/solution_bg.png);
     -ms-background-image: url(../images/solution_bg.png);
     text-align: left;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .top-banner div{
     width: 1200px;
@@ -93,11 +95,11 @@ i,em{
     opacity:0.75;
     margin-top: 24px;
 }
-.top-banner div span{
+.top-banner div a{
     display:inline-block;
     width:226px;
     height:56px;
-    background:rgba(23,130,255,1);
+    background:rgba(23,130,255,0.8);
     border:1px solid rgba(23,130,255,1);
     opacity:0.75;
     margin: 0 auto;
@@ -108,8 +110,8 @@ i,em{
     text-align: center;
     cursor: pointer;
 }
-.top-banner div span:hover{
-    background:rgba(23,130,255,0.8);
+.top-banner div a:hover{
+    background:rgba(23,130,255,1);
 }
 /*introduce*/
 .introduce{
@@ -182,14 +184,9 @@ i,em{
     text-align: center;
     line-height:  290px;
     float: left;
-    margin: 0 20px;
+    margin: 0 30px;
 }
-.velues ul li:nth-child(1){
-    margin-left: 0px;
-}
-.velues ul li:nth-child(4){
-    margin-right: 0px;
-}
+
 .velues ul li div{
     height: 130px;
     width: 100%;
@@ -252,12 +249,6 @@ i,em{
     line-height:  320px;
     float: left;
     margin: 0 25px;
-}
-.core ul li:nth-child(1){
-    margin-left: 0px;
-}
-.core ul li:nth-child(4){
-    margin-right: 0px;
 }
 .core ul li div{
     height: 130px;
@@ -357,12 +348,12 @@ i,em{
 .conditions .kinds .kinds-name li{
     cursor:pointer;
     width: 120px;
-    height: 50px;
+    height: 60px;
     float: left;
     font-size:18px;
     font-family:SourceHanSansCN-Normal;
     font-weight:400;
-    line-height:50px;
+    line-height:60px;
     text-align: center;
     margin: 0 50px;
 }

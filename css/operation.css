@@ -10,7 +10,7 @@ label,div,ol,ul,h1,h2,h3,h4,h5,h6,header,nav,article,footer,dl,dd,dt,tr,th,td{
 }
 
 body *{
-    font-family: 'microsoft yahei', Arial, Helvetica, sans-serif;
+    font-family:SourceHanSansCN-Medium, 'microsoft yahei', Arial, Helvetica, sans-serif;
 }
 body{
     background:rgba(255,255,255,1);
@@ -68,7 +68,7 @@ i,em{
     -ms-background-image: url(../images/operation-bg1.png);
     text-align: left;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-size:cover;
 }
 .top-banner div{
     width: 1200px;
@@ -98,7 +98,7 @@ i,em{
     display:inline-block;
     width:226px;
     height:56px;
-    background:rgba(24,72,128,1);
+    background:rgba(24,72,128,0.8);
     border:1px solid rgba(23,130,255,1);
     margin: 0 auto;
     margin-top: 40px;
@@ -109,7 +109,7 @@ i,em{
     cursor: pointer;
 }
 .top-banner div span:hover{
-    background:rgba(24,72,128,.8);
+    background:rgba(24,72,128,1);
 }
 .top-banner div a img{
     margin-bottom: 2px;
@@ -448,4 +448,17 @@ i,em{
     background: url("../img/app/qr_android.png") no-repeat;
     margin-top: 20px;
 }
-
+@media screen and (max-height: 768px) {
+    .modal-dialog{
+        margin-top: 120px;
+        width: 520px;
+        height: 420px;
+    }
+}
+@media screen and (max-height: 960px) and (min-height: 768px) {
+    .modal-dialog{
+        margin-top: 200px;
+        width: 520px;
+        height: 420px;
+    }
+}
