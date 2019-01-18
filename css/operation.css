@@ -1,3 +1,14 @@
+@font-face
+{
+font-family: SourceHanSansCN-Medium;
+src: url(./font-family/SourceHanSansCN-Medium.otf);
+}
+@font-face
+{
+font-family: SourceHanSansCN-Normal;
+src: url(./font-family/SourceHanSansCN-Normal.otf);
+}
+
 body,html,
 h1,
 h2,
@@ -10,7 +21,7 @@ label,div,ol,ul,h1,h2,h3,h4,h5,h6,header,nav,article,footer,dl,dd,dt,tr,th,td{
 }
 
 body *{
-    font-family:SourceHanSansCN-Medium, 'microsoft yahei', Arial, Helvetica, sans-serif;
+    font-family: SourceHanSansCN-Normal,SourceHanSansCN-Medium,'microsoft yahei', Arial, Helvetica, sans-serif;
 }
 body{
     background:rgba(255,255,255,1);
@@ -93,13 +104,13 @@ i,em{
     color:#696D6F;
     line-height:24px;
     margin-top: 24px;
+    opacity:0.75;
 }
 .top-banner div span{
     display:inline-block;
     width:226px;
     height:56px;
     background:rgba(24,72,128,0.8);
-    border:1px solid rgba(23,130,255,1);
     margin: 0 auto;
     margin-top: 40px;
     color: #fff;
