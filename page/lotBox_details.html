@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../plugins/bootstarp/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/lotBox_details.css">
+    <link rel="stylesheet" href="../css/back_top.css">
 </head>
 <body>
     <div class="project-detial ">
@@ -15,17 +16,17 @@
             <div class="col-xs-6 col-md-4 project-img">
                 <div id="myTabContent" class="tab-content detail-img">
                     <div class="tab-pane fade in active" id="first">
-                        <p>
+                        <p data-toggle="modal" data-target="#myModal-one">
                             <img src="../img/product/IOTBOX%20(1).JPG" >
                         </p>
                     </div>
                     <div class="tab-pane fade" id="second">
-                        <p>
+                        <p data-toggle="modal" data-target="#myModal-two">
                             <img src="../img/product/IOTBOX%20(2).JPG" >
                         </p>
                     </div>
                     <div class="tab-pane fade" id="three">
-                        <p>
+                        <p data-toggle="modal" data-target="#myModal-three">
                             <img src="../img/product/1.png" style="background: #EDEDED">
                         </p>
                     </div>
@@ -47,6 +48,33 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="modal fade" id="myModal-one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div >
+                            <img src="../img/product/IOTBOX%20(1).JPG" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div >
+                            <img src="../img/product/IOTBOX%20(2).JPG" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal-three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div >
+                            <img src="../img/product/1.png" style="background: #EDEDED">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-xs-12 col-md-8">
                 <p class="product-title">IoT-box（NB）</p>
@@ -139,10 +167,13 @@
                 </div>
             </div>
         </div>
-
+        <div class="back-top">
+            <img src="./../image/suspen_3.png" alt="">
+        </div>
     </div>
     <script src="../plugins/jquery/jquery-1.11.3.min.js"></script>
     <script src="../plugins/bootstarp/js/bootstrap.min.js"></script>
+    <script src="../js/back_top.js"></script>
 </body>
 
 </html>

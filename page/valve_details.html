@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../plugins/bootstarp/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/lotBox_details.css">
+    <link rel="stylesheet" href="../css/back_top.css">
 </head>
 <body>
     <div class="project-detial ">
@@ -15,38 +16,65 @@
             <div class="col-xs-6 col-md-4 project-img">
                 <div id="myTabContent" class="tab-content detail-img">
                     <div class="tab-pane fade in active" id="first">
-                        <p>
-                            <img src="../img/product/IOTBOX%20(1).JPG" >
+                        <p data-toggle="modal" data-target="#myModal-one">
+                            <img src="../img/product/阀%20(1).jpg" >
                         </p>
                     </div>
                     <div class="tab-pane fade" id="second">
-                        <p>
-                            <img src="../img/product/IOTBOX%20(2).JPG" >
+                        <p data-toggle="modal" data-target="#myModal-two">
+                            <img src="../img/product/阀%20(2).jpg" >
                         </p>
                     </div>
                     <div class="tab-pane fade" id="three">
-                        <p>
-                            <img src="../img/product/1.png" style="background: #EDEDED">
+                        <p data-toggle="modal" data-target="#myModal-three">
+                            <img src="../img/product/阀%20(3).jpg" style="background: #EDEDED">
                         </p>
                     </div>
                 </div>
                 <ul id="myTab" class="nav nav-tabs">
                     <li class="active">
                         <a href="#first" data-toggle="tab">
-                            <img src="../img/product/3.png" >
+                            <img src="../img/product/阀%20(1).jpg" >
                         </a>
                     </li>
                     <li>
                         <a href="#second" data-toggle="tab">
-                            <img src="../img/product/4.png" >
+                            <img src="../img/product/阀%20(2).jpg" >
                         </a>
                     </li>
                     <li>
                         <a href="#three" data-toggle="tab">
-                            <img src="../img/product/1.png" style="background: #EDEDED">
+                            <img src="../img/product/阀%20(3).jpg" style="background: #EDEDED">
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="modal fade" id="myModal-one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div >
+                            <img src="../img/product/阀%20(1).jpg" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div >
+                            <img src="../img/product/阀%20(2).jpg" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal-three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div >
+                            <img src="../img/product/阀%20(3).jpg" style="background: #EDEDED">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-xs-12 col-md-8">
                 <p class="product-title">智能入户调控阀</p>
@@ -140,10 +168,13 @@
                 </div>
             </div>
         </div>
-
+        <div class="back-top">
+            <img src="./../image/suspen_3.png" alt="">
+        </div>
     </div>
     <script src="../plugins/jquery/jquery-1.11.3.min.js"></script>
     <script src="../plugins/bootstarp/js/bootstrap.min.js"></script>
+    <script src="../js/back_top.js"></script>
 </body>
 
 </html>

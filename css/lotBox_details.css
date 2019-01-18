@@ -76,10 +76,10 @@
     width: 226px;
     height: 56px;
     background: #184880;
-    border: solid 1px #1782ff;
     color: #ffffff;
     text-align: center;
     line-height: 56px;
+    opacity:0.8;
     cursor: pointer;
     font-size: 20px;
 }
@@ -90,7 +90,7 @@
     text-decoration: none;
 }
 .consultation:hover{
-    opacity:0.8;
+    opacity:1;
 }
 .features img{
     width: 54px;
@@ -107,6 +107,10 @@
 }
 .features h3{
     margin-top: 0px;
+}
+.features .special{
+    line-height:1.5;
+    margin-top: -10px;
 }
 .footer {
     height: 372px;
@@ -146,4 +150,9 @@
     display: inline-block;
     margin-top: 5px;
     margin-left: 30px;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width:50%;
+    }
 }
