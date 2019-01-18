@@ -1,3 +1,14 @@
+@font-face
+{
+font-family: SourceHanSansCN-Medium;
+src: url(./font-family/SourceHanSansCN-Medium.otf);
+}
+@font-face
+{
+font-family: SourceHanSansCN-Normal;
+src: url(./font-family/SourceHanSansCN-Normal.otf);
+}
+
 body,html,
 h1,
 h2,
@@ -10,7 +21,7 @@ label,div,ol,ul,h1,h2,h3,h4,h5,h6,header,nav,article,footer,dl,dd,dt,tr,th,td{
 }
 
 body *{
-    font-family:SourceHanSansCN-Medium, 'microsoft yahei', Arial, Helvetica, sans-serif;
+    font-family:SourceHanSansCN-Normal ,SourceHanSansCN-Medium,'microsoft yahei', Arial, Helvetica, sans-serif;
 }
 body{
     background:rgba(255,255,255,1);
@@ -39,6 +50,9 @@ button::-moz-focus-inner{
 	padding: 0;
 }
 a:hover{
+    text-decoration:none;
+}
+a:focus{
     text-decoration:none;
 }
 /* img{
@@ -88,22 +102,23 @@ i,em{
     width: 100%;
     margin-top: 24px;
 }
-.top-banner a{
+.top-banner span{
     display:inline-block;
     width:226px;
     height:56px;
-    background:rgba(23,130,255,0.8);
-    border:1px solid rgba(23,130,255,1);
-    opacity:0.75;
+    background:rgba(23,130,255,1);
     margin: 0 auto;
     margin-top: 70px;
-    color: #fff;
     font-size:20px;
     line-height:56px;
     cursor: pointer;
+    opacity: 0.75;
 }
-.top-banner  a:hover{
-    background:rgba(23,130,255,1);
+.top-banner  span:hover{
+    opacity: 1;
+}
+.top-banner span a{
+    color: #fff;
 }
 /*zoology*/
 .zoology-reason{
@@ -439,9 +454,9 @@ i,em{
     cursor: pointer;
 }
 .add-link a:hover{
-    box-shadow:rgba(23,130,255,0.66) 0px 0px 32px  ;
-    -webkit-box-shadow:rgba(23,130,255,0.66)  0px 0px 32px  ;
-    -ms-box-shadow:rgba(23,130,255,0.66) 0px 0px 32px ;
-    -moz-box-shadow:rgba(23,130,255,0.66) 0px 0px 32px  ;
+    box-shadow:rgba(16,120,241,0.7) 0px 0px 32px  ;
+    -webkit-box-shadow:rgba(16,120,241,0.7)  0px 0px 32px  ;
+    -ms-box-shadow:rgba(16,120,241,0.7) 0px 0px 32px ;
+    -moz-box-shadow:rgba(16,120,241,0.7) 0px 0px 32px  ;
 
 }
