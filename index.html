@@ -91,7 +91,7 @@
                 <span class="register">免费注册</span>
             </div> -->
         </div>
-        <!-- <div class="head-mobile">
+        <div class="head-mobile">
             <div>
                 <span>揽月云</span>
                 <span class="iconfont icon-caidan folding"></span>
@@ -128,7 +128,7 @@
                 </li>
             </ul>
             
-        </div> -->
+        </div>
         <div id="main">
             <div class="screen screen-first screen-1">
                 <ul class="banner-ul">
@@ -581,9 +581,10 @@
     <script src="./plugins/jquery/jquery-1.11.3.min.js"></script>
     <script src="./js/tab_switch.js"></script>
     <script src="./js/page_jump.js"></script>
-    <!-- <script src="./js/mobile.js"></script> -->
+    <script src="./js/mobile.js"></script>
     <script>
         (function() {
+            
             //如果不加时间控制，滚动会过度灵敏，一次翻好几屏
             let startTime = 0; //翻屏起始时间  
             let endTime = 0 ;
@@ -603,6 +604,7 @@
             const unit2Childs = [].slice.call($('.unit-2>li'));
             let eq;
             let currentEq = 1;
+            let headHeight = 88;
             
             const Home = {
                 init: function() {
@@ -623,6 +625,14 @@
                     $('.back-top').hide();
                 },
                 assignment: function() {
+                    if(wid < 421) {
+                        headHeight = 57;
+                        $('.head').hide();
+                        $('.head-mobile').show();
+                    }else {
+                        $('.head').show();
+                        $('.head-mobile').hide();
+                    }
                     $("#home").css('height', hei + "px");
                     const obj = [].slice.call(document.querySelectorAll('.screen'));
                     for(let i in obj){
@@ -630,7 +640,7 @@
                             obj[i].style.height = hei + "px";
                         }
                         if(obj[i].classList.contains('screen-other')) {
-                            obj[i].style.height = hei - 88 + "px";
+                            obj[i].style.height = hei - headHeight + "px";
                         }
                     }
                 },
@@ -790,7 +800,7 @@
                             now = now - footerHeight;
                             $('.arrow').addClass('hide');
                         }else {
-                            now = now - hei + 88;
+                            now = now - hei + headHeight;
                         }
                         console.log(now)
                         if(now < 0) {
@@ -816,21 +826,21 @@
                         if(eq > currentEq) {
                             if(eq == 8) {
                                 n = eq - currentEq - 1;
-                                now = now - (hei - 88) * n - footerHeight;
+                                now = now - (hei - headHeight) * n - footerHeight;
                                 $('.arrow').addClass('hide');
                             }else {
                                 n = eq - currentEq;
-                                now = now - (hei - 88) * n;
+                                now = now - (hei - headHeight) * n;
                             }
                         }else if(eq < currentEq) {
                             $('.arrow').removeClass('hide');
                             if(currentEq == 8) {
                                 n = currentEq - eq - 1;
-                                now = now + (hei - 88) * n + footerHeight;
+                                now = now + (hei - headHeight) * n + footerHeight;
                             }
                             if(currentEq != 8) {
                                 n = currentEq - eq;
-                                now = now + (hei - 88) * n;
+                                now = now + (hei - headHeight) * n;
                             }
                             if(eq == 1) {
                                 now = 0;
@@ -892,7 +902,7 @@
                         console.log('index:::', index);
                         console.log('eq:::', eq);
                         console.log('currentEq:::', currentEq);
-                        now = now - hei + 88;
+                        now = now - hei + headHeight;
                         console.log(now);
                         switchPoint();
                         if(now < 0) {
@@ -911,7 +921,7 @@
                             console.log(now);
                             $('.arrow').removeClass('hide');
                         }else {
-                            now = now + hei - 88;
+                            now = now + hei - headHeight;
                             console.log(now);
                             $('.arrow').removeClass('hide');
                         }

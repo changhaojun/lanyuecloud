@@ -204,13 +204,10 @@
 }
 
 
-/* @media (max-width: 320px) {
-    .head {
-        display: none;
-    }
+@media (max-width: 320px) {
     .head-mobile {
         width: 100%;
-        height: 87px;
+        height: 57px;
         position: fixed;
         z-index: 999;
         color: #ffffff;
@@ -235,7 +232,7 @@
         font-size: 1.4rem;
         background: rgba(0,0,0,0.9);
         position: absolute;
-        top: 88px;
+        top: 58px;
         z-index: 9999;
         display: none
     }
@@ -267,4 +264,4 @@
     .case-mobile>p:last-child {
         padding-bottom: 0;
     }
-} */
+}
