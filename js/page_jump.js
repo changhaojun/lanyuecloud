@@ -7,6 +7,6 @@ function pageJump(event) {
     if(href == 'index.html') {
         window.location.href = '../' + href;
     }else {
-        window.location.href = './iframe.html';
+        window.location.href = './page/iframe.html';
     }
 }
