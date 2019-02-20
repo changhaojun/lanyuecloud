@@ -126,7 +126,7 @@ i,em{
 /*cooperation*/
 .cooperation{
     width: 100%;
-    height: 530px;
+    height: 680px;
     padding-top: 64px;
 }
 .cooperation div{
@@ -142,7 +142,7 @@ i,em{
     width: 1200px;
     margin: 0 auto;
     margin-top: 40px;
-    height: 300px;
+    height: 450px;
 }
 .cooperation ul:after {
     visibility:hidden;
