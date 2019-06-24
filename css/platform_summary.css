@@ -1,3 +1,14 @@
+@font-face
+{
+font-family: SourceHanSansCN-Medium;
+src: url(./font-family/SourceHanSansCN-Medium.otf);
+}
+@font-face
+{
+font-family: SourceHanSansCN-Normal;
+src: url(./font-family/SourceHanSansCN-Normal.otf);
+}
+
 body,html,
 h1,
 h2,
@@ -10,7 +21,7 @@ label,div,ol,ul,h1,h2,h3,h4,h5,h6,header,nav,article,footer,dl,dd,dt,tr,th,td{
 }
 
 body *{
-    font-family:SourceHanSansCN-Medium, 'microsoft yahei', Arial, Helvetica, sans-serif;
+    font-family:SourceHanSansCN-Normal,SourceHanSansCN-Medium, 'microsoft yahei', Arial, Helvetica, sans-serif;
 }
 body{
     background:rgba(255,255,255,1);
@@ -70,12 +81,12 @@ i,em{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.top-banner div{
+.top-banner .banner-content{
     width: 1200px;
     height: 100%;
     margin: 0 auto;
 }
-.top-banner div h2{
+.top-banner .banner-content h2{
     height:48px;
     font-size:48px;
     font-family:SourceHanSansCN-Medium;
@@ -84,7 +95,7 @@ i,em{
     line-height:48px;
     width: 100%;
 }
-.top-banner div  p{
+.top-banner .banner-content  p{
     width:620px;
     height:48px;
     font-size:14px;
@@ -95,23 +106,35 @@ i,em{
     opacity:0.75;
     margin-top: 24px;
 }
-.top-banner div a{
+.top-banner .banner-content span{
     display:inline-block;
     width:226px;
     height:56px;
-    background:rgba(23,130,255,0.8);
+    background:rgba(23,130,255,1);
     border:1px solid rgba(23,130,255,1);
     opacity:0.75;
     margin: 0 auto;
     margin-top: 40px;
-    color: #fff;
     font-size:20px;
     line-height:56px;
     text-align: center;
     cursor: pointer;
 }
-.top-banner div a:hover{
+.top-banner .banner-content span:nth-child(2){
+    margin-left: 24px;
+    background:none;
+    border:1px solid rgba(255,255,255,1);
+}
+.top-banner .banner-content span:hover{
+    opacity:1;
     background:rgba(23,130,255,1);
+    border:1px solid rgba(23,130,255,1);
+}
+.top-banner .banner-content span a{
+    color: #fff;
+    display:inline-block;
+    width: 100%;
+    height: 100%;
 }
 /*summary*/
 .summary{
