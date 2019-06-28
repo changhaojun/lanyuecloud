@@ -31,3 +31,29 @@
         height: 17px;
     }
 }
+
+@media (max-width: 420px) {
+    html {
+        font-size: 100%;
+    }
+    .back-top {
+        width: 2.25rem;
+        right: 1.5rem;
+        bottom: 2.5rem;
+        height: 2.25rem;
+        padding-top: 0.6rem;
+        padding-left: 0.62rem;
+    }
+}
+
+@media (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 87.5%;
+    }
+}

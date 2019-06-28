@@ -394,3 +394,266 @@ a:focus, a:hover{
         margin: 10% auto;
     }
 }
+
+
+@media (max-width: 420px) {
+    .room-temperature-detial .temp-con {
+        padding-bottom: 2rem;
+    }
+    .room-temperature-detial .detial-main {
+        padding: 1.5rem 0;
+    }
+    .common-width {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .room-temperature-detial .project-img {
+        width: 10rem;
+        height: 10rem;
+        background-size: cover;
+        margin-left: 1rem;
+    }
+    .room-temperature-detial .project-info {
+        margin: 1rem 0 0;
+    }
+    .room-temperature-detial .feature-title {
+        font-size: 1.25rem;
+        margin: 0;
+        line-height: 2.5rem;
+        height: auto;
+    }
+    .room-temperature-detial .second-title {
+        font-size: 1rem;
+        line-height: 1.125rem;
+    }
+    .detial-bg {
+        display: none;
+    }
+    .common-width>div:nth-child(2) {
+        width: 100%;
+    }
+    .room-temperature-detial .project-info p:nth-of-type(2) {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .room-temperature-detial .project-info .lanyue-logo {
+        margin-left: 0;
+        background-size: cover;
+        height: 6rem;
+        width: 5rem;
+    }
+    .room-temperature-detial .project-info p:nth-of-type(2) span {
+        height: auto;
+        line-height: initial;
+        margin-top: -1rem;
+        margin-left: 1rem;
+        font-size: 0.875rem;
+    }
+    .room-temperature-detial .consultation {
+        width: 7.5rem;
+        height: 2.25rem;
+        line-height: 2.25rem;
+        margin-top: 0;
+    }
+    .room-temperature-detial .consultation a {
+        font-size: 1rem;
+    }
+    .little-title {
+        height: auto;
+        line-height: initial;
+        font-size: 1rem;
+    }
+    .visible-xs-block {
+        display: none;
+    }
+    .wifi-temp {
+        padding: 1rem 0;
+    }
+    .wifi-temp>li {
+        float: none;
+        width: 100%;
+    }
+    .wifi-temp .img-bg {
+        width: 14rem;
+        height: 21rem;
+        display: none;
+    }
+    .wifi-temp li:nth-of-type(1) div {
+        position: initial;
+    }
+    .wifi-temp li:nth-of-type(1) .features-img {
+        width: 18rem;
+        height: 8.5rem;
+        margin: 0 auto;
+    }
+    .wifi-temp .features {
+        margin-left: 0;
+    }
+    .wifi-temp .features p:nth-of-type(1), .nbLot-temp p:nth-of-type(1) {
+        height: auto;
+        line-height: initial;
+        font-size: 1rem;
+    }
+    .wifi-temp .features p:nth-of-type(2) {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+    .wifi-temp .features ul, .nblot-detail ul {
+        margin-top: 1rem;
+    }
+    .wifi-temp .features ul li.col-xs-4, .nblot-detail ul li {
+        width: auto;
+        height: auto;
+        line-height: initial;
+    }
+    .nbLot-temp {
+        padding-left: 1rem;
+    }
+    .nbLot-temp>div:first-child {
+        margin-left: 0 !important;
+    }
+    .nblot-detail {
+        margin-top: 1rem;
+        padding: 0 1rem 1rem;
+    }
+    .nbLot-temp .nblot-bg {
+        top: 1rem;
+        width: 8rem;
+        height: 10rem;
+        right: 1rem;
+        background-size: cover;
+    }
+    .nblot-detail>p {
+        padding-top: 11rem;
+    }
+    .temp-platform {
+        margin-top: 2rem;
+    }
+    .lanyue-web {
+        margin-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .lanyue-web .lanyue-web-img {
+        display: none;
+    }
+    .temp-common {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+    .temp-common p:nth-of-type(1) {
+        height: auto;
+        line-height: initial;
+        font-size: 1rem;
+    }
+    .temp-common dl {
+        margin-top: 0.5rem;
+        margin-bottom: 1.25rem;
+    }
+    .temp-common dt {
+        height: auto;
+        line-height: initial;
+        font-size: 1rem;
+    }
+    .temp-common dd {
+        height: auto;
+        line-height: initial;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+    }
+    .two-net {
+        padding-top: 1rem;
+    }
+    .margin-64 {
+        padding: 0;
+    }
+    .two-net>div {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .two-net-water {
+        margin-top: 0;
+    }
+    .water-title {
+        margin-top: 0;
+        padding-top: 1.5rem;
+        font-size: 1.25rem;
+    }
+    .two-net-water p {
+        height: auto;
+        line-height: initial;
+        font-size: 1rem;
+        padding: 0.5rem 0 1.5rem;
+    }
+    .temp-app-main {
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .temp-app .little-title {
+        padding-bottom: 1rem;
+    }
+    .temp-app-bg{
+        width: 100%;
+        float: none;
+    }
+    .temp-app-bg img {
+        width: 100%;
+        margin-left: 0;
+    }
+    .temp-img {
+        padding-left: 0;
+        float: none;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .temp-app .temp-app-title {
+        height: auto;
+        line-height: initial;
+        font-size: 1rem;
+        padding-top: 0.5rem;
+    }
+    .temp-common_ {
+        margin-top: 1rem;
+    }
+    .footer {
+        margin-top: 2rem;
+    }
+
+    .footer {
+        height: auto;
+    }
+    .qr {
+        padding-top: 2rem !important;
+    }
+    .qr>p {
+        line-height: 2rem;
+        margin-bottom: 0;
+    }
+    .address {
+        padding-bottom: 1rem;
+    }
+    .address>p {
+        margin-bottom: 0;
+    }
+    .address>span {
+        line-height: 4rem;
+    }
+}
+
+@media (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 87.5%;
+    }
+}

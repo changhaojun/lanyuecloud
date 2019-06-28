@@ -14,6 +14,10 @@ $(function() {
                 scrollTop: 0
             },500);
         })
+        const parent1 = $('.menu-mobile', parent.document);
+        document.querySelector('body').addEventListener('click', function() {
+            parent1.hide();
+        })
     } 
     backTop();
 })

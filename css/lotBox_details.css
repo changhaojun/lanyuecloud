@@ -156,3 +156,85 @@
         width:50%;
     }
 }
+
+@media (max-width: 420px) {
+    .detial-main {
+        padding: 2rem 0;
+    }
+    .product-title {
+        font-size: 1.25rem;
+    }
+    .consultation {
+        width: 9rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size: 1rem;
+        margin: 0
+    }
+    .feature-content {
+        padding: 1rem;
+    }
+    .feature-title {
+        padding: 1rem 0;
+        margin: 0;
+        font-size: 1.25rem;
+    }
+    .feature-main li {
+        margin: 1rem 0 0rem;
+    }
+    .features {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .features>p {
+        margin: 0;
+    }
+    .features>p, .features>div {
+        float: none !important;
+    }
+    .features div {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 1rem
+    }
+    .features img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .features h3 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .footer {
+        height: auto;
+    }
+    .qr {
+        padding-top: 2rem !important;
+    }
+    .qr>p {
+        line-height: 2rem;
+        margin-bottom: 0;
+    }
+    .address {
+        padding-bottom: 1rem;
+    }
+    .address>p {
+        margin-bottom: 0;
+    }
+    .address>span {
+        line-height: 4rem;
+    }
+}
+
+@media (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 87.5%;
+    }
+}

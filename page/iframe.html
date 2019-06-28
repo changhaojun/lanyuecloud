@@ -36,12 +36,6 @@
                                             <a href="platform_summary.html" target="iframe0" data-e="2" onclick="addActive(event)">智慧供热云平台</a>
                                             <!-- <span class="iconfont icon-jiantou"></span> -->
                                         </div>
-                                        <!-- <div class="block-content">
-                                            <p>提升热力公司供热管理效率，对供热数据进行深度分析，提高企业效益</p>
-                                            <a href="">平台介绍</a>
-                                            <a href="">换热站APP</a>
-                                            <a href="">揽月+APP</a>
-                                        </div> -->
                                     </li>
                                     <li data-eq='2'>
                                         <div class="block-title">
@@ -92,10 +86,44 @@
                     </li>
                 </ul>
             </div>
-            <!-- <div class="util">
-                <span class="login">登录</span>
-                <span class="register">免费注册</span>
-            </div> -->
+        </div>
+        <div class="head-mobile">
+            <div>
+                <img src="./../image/logo.png" alt="">
+                <span class="iconfont icon-caidan folding"></span>
+            </div>
+            <ul class="menu-mobile">
+                <li><a data-href="index.html" data-i="1" onclick="pageJump(event)">首页</a></li>
+                <li>
+                    <a>产品与服务</a>
+                    <div class="second-menu">
+                        <div><a href="prodouct_platform.html" target="iframe0" data-i="2" onclick="pageActive(event)">揽月云平台服务</a></div>
+                        <div><a href="platform_summary.html" target="iframe0" data-i="2" onclick="pageActive(event)">智慧供热云平台</a></div>
+                        <div class="third-menu">
+                            <a>IoT产品模块</a>
+                            <div class="case-mobile">
+                                <p><a href="dtu_details.html" target="iframe0" data-i="2" onclick="pageActive(event)">Dtu（ Gprs ）联网模块</a></p>
+                                <p><a href="room_temperature_details.html" target="iframe0" data-i="2" onclick="pageActive(event)">室温采集器（nb，wifi）</a></p>
+                                <p><a href="valve_details.html" target="iframe0" data-i="2" onclick="pageActive(event)">入户调控阀（nb）</a></p>
+                                <p><a href="lotBox_details.html" target="iframe0" data-i="2" onclick="pageActive(event)">Iotbox（NB）数据通讯模块</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a>解决方案</a>
+                    <div class="second-menu">
+                        <div><a href="solution.html" target="iframe0" data-i="3" onclick="pageActive(event)">城市智慧供热解决方案</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="zoology.html" target="iframe0" data-i="4" onclick="pageActive(event)">揽月云生态</a>
+                </li>
+                <li>
+                    <a href="about_us.html" target="iframe0" data-i="5" onclick="pageActive(event)">关于我们</a>
+                </li>
+            </ul>
+            
         </div>
         <div class="main">
             <iframe src="" width="100%" height="100%" name="iframe0" style="overflow:hidden; border: none;"></iframe>
@@ -167,8 +195,12 @@
 
     <script src="./../plugins/jquery/jquery-1.11.3.min.js"></script>
     <script src="./../js/page_jump.js?v=1.0.0"></script>
+    <script src="../js/mobile.js"></script>
     <script>
         (function() {
+            const wid = document.body.clientWidth;
+            const hei = document.body.clientHeight;
+            let headHeight = 88;
             let App = {
                 init: function() {
                     const href = window.sessionStorage.getItem('href');
@@ -178,15 +210,45 @@
                     $('iframe').attr('src', href);
                     $('.menu>ul>li').eq(currentIndex).find('>a').addClass('menuActive');
                     this.backTop();
+                    this.assignment();
+                    this.active();
+                    document.querySelector('.suspension').addEventListener('click', function() {
+                        $('.menu-mobile').hide();
+                    })
                 },
                 backTop: function() {
-                   
                     $('.back-top').click(function() {
                         $('body,html').animate({
                             scrollTop: 0
                         },
                         1000);
                     })
+                },
+                assignment: function() {
+                    if(wid < 421) {
+                        headHeight = 57;
+                        $('.head').hide();
+                        $('.head-mobile').show();
+                        $('.main').css({top: '58px', height: 'calc(100% - 62px)'});
+                    }else {
+                        $('.head').show();
+                        $('.head-mobile').hide();
+                        $('.main').css({top: '88px', height: 'calc(100% - 92px)'})
+                    }
+                    $("#home").css('height', hei + "px");
+                    const obj = [].slice.call(document.querySelectorAll('.screen'));
+                    for(let i in obj){
+                        if(obj[i].classList.contains('screen-first')) {
+                            obj[i].style.height = hei + "px";
+                        }
+                        if(obj[i].classList.contains('screen-other')) {
+                            obj[i].style.height = hei - headHeight + "px";
+                        }
+                    }
+                },
+                active: function() {
+                    const currentIndex = window.sessionStorage.getItem('currentIndex');
+                    $('.menu-mobile>li').eq(currentIndex-1).find('>a').addClass('menuActive');
                 }
             }
             App.init();
@@ -197,6 +259,27 @@
             e--;
             $('.menu>ul>li a').removeClass('menuActive');
             $('.menu>ul>li').eq(e).find('>a').addClass('menuActive');
+
+            const href = event.target.getAttribute('href');
+            let currentIndex =  event.target.getAttribute('data-e');
+            window.sessionStorage.setItem('href', href);
+            window.sessionStorage.setItem('currentIndex', currentIndex);
+        }
+
+        function pageActive(event) {
+            let i = Number(event.target.getAttribute('data-i'));
+            i--;
+            $('.menu-mobile>li>a').removeClass('menuActive');
+            $('.menu-mobile>li').eq(i).find('>a').addClass('menuActive');
+
+            $('.menu-mobile').hide();
+            $('.second-menu').hide();
+            $('.case-mobile').hide();
+
+            const href = event.target.getAttribute('href');
+            let currentIndex =  event.target.getAttribute('data-i');
+            window.sessionStorage.setItem('href', href);
+            window.sessionStorage.setItem('currentIndex', currentIndex);
         }
     </script>
 </body>

@@ -442,3 +442,242 @@ i,em{
     list-style-type:disc;
     margin-left:20px; 
 }
+
+
+@media screen and (max-width: 420px) {
+    .top-banner {
+        background-size: cover;
+        height: 9rem;
+        padding: 0.25rem 1rem 0;
+    }
+    .top-banner div {
+        width: 100%;
+        height: auto; 
+    }
+    .top-banner div h2 {
+        font-size: 1.25rem;
+        height: auto;
+        line-height: 2.25rem;
+    }
+    .top-banner div p {
+        width: 100%;
+        height: initial;
+        line-height: 1.125rem;
+        font-size: 0.875rem;
+        margin-top: 0;
+    }
+    .top-banner div span {
+        width: 7rem;
+        height: 2rem;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        line-height: 2rem;
+    }
+    .introduce {
+        width: 100%;
+        height: auto;
+        padding: 0 1rem;
+        padding-top: 2rem;
+    }
+    .introduce h1 {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
+    }
+    .introduce .introduce-info {
+        height: auto;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    .introduce .introduce-info p {
+        height: auto;
+        line-height: 1.75rem;
+        text-align: left;
+    }
+    .velues {
+        width: 100%;
+        height: auto;
+        padding: 0 1rem;
+        padding-top: 2rem;
+    }
+    .velues h1 {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
+    }
+    .velues ul {
+        width: auto;
+        height: initial;
+        margin-top: 1rem;
+    }
+    .velues ul li {
+        width: calc(50% - 0.5rem);
+        height: auto;
+        line-height: initial;
+        margin: 0 1rem 1rem 0;
+    }
+    .velues ul li:nth-child(even) {
+        margin-right: 0;
+    }
+    .velues ul li div {
+        height: 4rem;
+        line-height: initial;
+    }
+    .velues ul li div>img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .velues ul li h3 {
+        height: 2rem;
+        line-height: initial;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .velues ul li p {
+        line-height: initial;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+    }
+    .core {
+        width: 100%;
+        height: initial;
+        padding: 0 1rem;
+        padding-top: 2rem;
+    }
+    .core h2 {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
+    }
+    .core ul {
+        width: auto;
+        height: initial;
+        margin-top: 1rem;
+    }
+    .core li {
+        width: calc(50% - 0.5rem);
+        height: auto;
+        line-height: initial;
+        margin: 0 1rem 1rem 0;
+    }
+    .core li:nth-child(even) {
+        margin-right: 0;
+    }
+    .core ul li div {
+        height: 5rem;
+        line-height: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .core ul li div>img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .core ul li h5 {
+        height: 2.5rem;
+        line-height: 1.25rem;
+        font-size: 1rem;
+    }
+    .core ul li p {
+        line-height: initial;
+        margin-top: 0.25rem;
+        font-size: 0.875rem;
+    }
+    .frame {
+        padding-top: 1rem;
+        margin-top: 1rem;
+        height: auto;
+    }
+    .frame div {
+        width: 100%;
+        padding: 0 1rem;
+        height: auto;
+    }
+    .frame div h2 {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
+    }
+    .frame div .core-pic {
+        margin-top: 1rem;
+        background-size: contain;
+        height: 14rem;
+    }
+    .conditions {
+        width: 100%;
+        height: auto;
+        margin: 2rem 0 1rem;
+    }
+    .conditions h2 {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
+    }
+    .conditions .kinds {
+        height: auto;
+        padding: 0 1rem;
+    }
+    .conditions .kinds .kinds-name {
+        width: 100%;
+        margin-top: 0.5rem;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .conditions .kinds .kinds-name li {
+        width: 33.3%;
+        font-size: 1.125rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin: 0;
+    }
+    .conditions .kinds .kinds-content {
+        height: auto;
+        padding: 1rem;
+    }
+    .kinds-content .choose .map {
+        display: none;
+    }
+    .kinds-content .choose .detail {
+        float: none;
+        width: 100%;
+        padding-top: 0;
+    }
+    .kinds-content .choose .detail h2 {
+        height: 2.25rem;
+        line-height: 2.25rem;
+        font-size: 1.125rem;
+    }
+    .kinds-content .choose .detail h3 {
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .kinds-content .choose .detail li {
+        line-height: 1.25rem;
+        margin-left: 1.25rem;
+    }
+    .kinds-content .choose .detail h4 {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+        line-height: 1.375rem;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 87.5%;
+    }
+    .top-banner {
+        height: 10rem;
+    }
+}

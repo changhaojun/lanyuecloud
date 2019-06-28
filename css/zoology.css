@@ -460,3 +460,205 @@ i,em{
     -moz-box-shadow:rgba(16,120,241,0.7) 0px 0px 32px  ;
 
 }
+
+
+@media screen and (max-width: 420px) {
+    .top-banner {
+        background-size: cover;
+        height: 8rem;
+        padding: 0.25rem 1rem 0;
+    }
+    .top-banner div {
+        height: auto;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    .top-banner p {
+        height: initial;
+        line-height: 1.125rem;
+        font-size: 0.875rem;
+        margin-top: 0;
+    }
+    .top-banner span {
+        width: 7rem;
+        height: 2rem;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        line-height: 2rem;
+    }
+    .zoology-reason {
+        height: auto;
+        padding: 0 1rem;
+        padding-top: 1rem;
+    }
+    .zoology-reason h1 {
+        font-size: 1.5rem;
+    }
+    .zoology-reason .zoology-result {
+        height: initial;
+        width: auto;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        line-height: 1.75rem;
+        padding: 0;
+        text-align: left;
+    }
+    .zoology-reason ul {
+        width: auto;
+        height: initial;
+        margin-top: 1rem;
+    }
+    .zoology-reason ul li {
+        width: calc(50% - 0.5rem);
+        height: auto;
+        line-height: initial;
+        margin: 0 1rem 1rem 0;
+    }
+    .zoology-reason ul li:nth-child(even) {
+        margin-right: 0;
+    }
+    .zoology-reason ul li div {
+        height: 5rem;
+        line-height: initial;
+    }
+    .zoology-reason ul li div>img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .zoology-reason ul li h3 {
+        height: 2.5rem;
+        line-height: 1.25rem;
+        font-size: 1rem;
+    }
+    .zoology-reason ul li p {
+        line-height: initial;
+        margin-top: 0.25rem;
+        font-size: 0.875rem;
+    }
+    .cooperation {
+        height: initial;
+        padding: 0 1rem;
+        padding-top: 1rem;
+    }
+    .cooperation div {
+        font-size: 1.5rem;
+    }
+    .cooperation p {
+        height: initial;
+        width: auto;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        line-height: 1.375rem;
+    }
+    .cooperation ul {
+        width: 100%;
+        height: auto;
+        margin-top: 0.5rem;
+    }
+    .cooperation ul li {
+        width: 50%;
+        height: 4rem;
+        line-height: 4rem;
+    }
+    .cooperation ul li>img {
+        width: 100%;
+    }
+    .recruit {
+        width: 100%;
+        height: initial;
+        padding: 0 1rem;
+        padding-top: 2rem;
+    }
+    .recruit h2 {
+        font-size: 1.5rem;
+    }
+    .recruit .recruit-content {
+        height: initial;
+        width: auto;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        line-height: 1.375rem;
+    }
+    .recruit ul {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .recruit ul li {
+        width: calc(50% - 0.5rem);
+        height: 17rem;
+        margin: 0 1rem 1rem 0;
+    }
+    .recruit ul li:nth-child(even) {
+        margin-right: 0;
+    }
+    .recruit ul li div {
+        height: 6rem;
+        line-height: 6rem;
+    }
+    .recruit ul li div>img {
+        width: 6rem;
+        height: 4rem;
+    }
+    .recruit ul li h5 {
+        height: 2rem;
+        font-size: 1rem;
+        line-height: 1.125rem;
+        width: 100%;
+        margin-top: 0.75rem;
+        padding: 0 0.625rem;
+        display: flex;
+        align-items: center;
+    }
+    .recruit ul li p {
+        width: 100%;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        height: auto;
+        line-height: 1.375rem;
+        padding: 0 0.625rem;
+    }
+    .add {
+        display: none;
+    }
+    .add-link {
+        height: 13rem;
+        padding: 1rem 1rem 0;
+        background-size: cover;
+    }
+    .add-link h2 {
+        font-size: 1.5rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .add-link p {
+        height: auto;
+        line-height: initial;
+        font-size: 1rem;
+        margin-top: 0.875rem;
+    }
+    .add-link a {
+        padding: 0.6rem 3rem;
+        height: auto;
+        line-height: initial;
+        width: auto;
+        font-size: 1rem;
+        display: inline-block;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 87.5%;
+    }
+    .recruit ul li {
+        height: 18rem;
+    }
+}

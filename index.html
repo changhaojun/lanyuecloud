@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="./css/head.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/home.css?v=1.0">
+    <link rel="stylesheet" href="./css/_home.css?v=1.0">
+    <link rel="stylesheet" href="./css/_footer.css">
 </head>
 <body>
-    <ul id="home">
+    <div id="home">
         <div class="head">
             <div class="logo">
                 <img src="./image/logo.png" alt="">
@@ -93,7 +95,7 @@
         </div>
         <div class="head-mobile">
             <div>
-                <span>揽月云</span>
+                <img src="./../image/logo.png" alt="">
                 <span class="iconfont icon-caidan folding"></span>
             </div>
             <ul class="menu-mobile">
@@ -127,15 +129,26 @@
                     <a data-href="about_us.html" data-i="5" onclick="pageJump(event)">关于我们</a>
                 </li>
             </ul>
-            
         </div>
         <div id="main">
             <div class="screen screen-first screen-1">
                 <ul class="banner-ul">
                     <li class="li-1">
+                        <div class="mobile">
+                            <h1>揽月云全生态智能工业平台</h1>
+                            <p>
+                                工业设备运行数据接入揽月云智能工业平台，寻找最优的调控方案，提升企业能效，最终实现降耗增效
+                            </p>
+                        </div>
                         <span data-href="prodouct_platform.html" data-i="2" onclick="pageJump(event)">了解详情</span>
                     </li>
                     <li class="li-2">
+                        <div class="mobile">
+                            <h1>合作伙伴招募</h1>
+                            <p>
+                                联合制造厂商、渠道商、等厂商，一同建立智能工业领域新生态
+                            </p>
+                        </div>
                         <span data-href="zoology.html" data-i="4" onclick="pageJump(event)">了解详情</span>
                     </li>
                 </ul>
@@ -181,10 +194,6 @@
                                 <span class="small-title">城市智慧用热解决方案</span>
                                 <p class="small-describe">适用于城市集中供热，分布式供热，分户
                                         供热等场景。</p>
-                                <!-- <div class="details">
-                                        <a>了解详情</a>&nbsp;
-                                    <img src="./../image/screen2.png" alt="">
-                                </div> -->
                             </li>
                             <li>
                                 <span class="small-title">工业设备合作商招募</span>
@@ -302,7 +311,7 @@
                                         <img src="./image/screen3_2_4.png" alt="">
                                     </div>
                                     <div class="li-content">
-                                        <span>Iotbox（NB）数据通讯模块</span>
+                                        <span>Iotbox数据通讯模块</span>
                                         <p>
                                             通过平台实现亿级设备安全、可靠、稳定接入云端；帮助开发者轻松管理设备，
                                             基于平台进行快速应用开发
@@ -317,7 +326,7 @@
             </div>
             <div class="screen screen-other screen-4">
                 <div class="warp case">
-                    <span>多场景解决方案, 赋能智能工业来来</span>
+                    <span>多场景解决方案, 赋能智能工业未来</span>
                     <ul class="case-title">
                         <li class="case-active" data-eq="0">
                             <p>城市智慧供热解决方案</p>
@@ -544,7 +553,6 @@
                             <div class="customer-right pull-left">
                                 <label for="">合作咨询</label>
                                 <p class="right-num">
-                                    <!-- <a data-href="consultation.html" data-i="10" onclick="pageJump(event)">填写资料</a> -->
                                     <a href="./page/consultation.html" target="_blank">填写资料</a>
                                 </p>
                             </div>
@@ -613,7 +621,7 @@
                     this.assignment();
                     this.compatible();
                     $('.progress-bar span i').eq(mark).animate({width: 43 + 'px'}, 8000);
-                    this.play();
+                    // this.play();
                     this.clickProgress();
                     this.productSwitch();
                     this.playUnit1();
@@ -625,12 +633,18 @@
                     this.clickPoint();
                     this.backTop();
                     $('.back-top').hide();
+                    this.menuHide('#main');
+                    this.menuHide('.arrow');
+                    this.menuHide('.suspension');
                 },
                 assignment: function() {
                     if(wid < 421) {
-                        headHeight = 57;
+                        headHeight = 58;
                         $('.head').hide();
                         $('.head-mobile').show();
+                        $('.mobile').show();
+                        $('.li-1').css({background: 'url(./../image/banner1_.png)', backgroundSize: 'cover'});
+                        $('.li-2').css({background: 'url(./../image/banner2_.png)', backgroundSize: 'cover'});
                     }else {
                         $('.head').show();
                         $('.head-mobile').hide();
@@ -645,6 +659,11 @@
                             obj[i].style.height = hei - headHeight + "px";
                         }
                     }
+                },
+                menuHide(e) {
+                    document.querySelector(e).addEventListener('click', function() {
+                        $('.menu-mobile').hide();
+                    })
                 },
                 compatible: function() {
                     //浏览器兼容      
@@ -696,8 +715,20 @@
                         $('.progress-bar i').css('display', 'none');
                         $('.progress-bar>span').css('background', 'rgba(255,255,255,0.4)');
                         $(this).css('background', '#ffffff');
-                        let url_ = './image/banner' + dix + '.png';
-                        $('.banner-ul>li').eq(0).css('background-image', 'url(' + url_ + ')');
+                        // let url_ = null;
+                        // if(wid < 421) {
+                        //     url_ = './image/banner' + dix + '_.png';
+                        // }else {
+                        //     url_ = './image/banner' + dix + '.png';
+                        // }
+                        // $('.banner-ul>li').eq(0).css('background-image', 'url(' + url_ + ')');
+
+                        const oUl = document.querySelector('.banner-ul');
+                        const oLi = document.querySelector('.banner-ul>li');
+                        $('.banner-ul').animate({'left': -wid + 'px'}, 0, function() {
+                            oUl.appendChild(oLi);
+                            oUl.style.left = 0;
+                        });
                     })
                 },
                 // 产品与服务
@@ -814,6 +845,7 @@
                 },
                 clickPoint: function() {
                     $('.switch-point>li').click(function() {
+                        $('.menu-mobile').hide();
                         eq = $(this).attr('data-eq');
                         index = eq;
                         if(index == 1) {
@@ -935,12 +967,12 @@
                         console.log('currentEq:::', currentEq);
                         console.log(now);
                         switchPoint();
+                        toPage(now);
                         if(now == 0) {
                             head.style.background = 'rgba(0, 0, 0, 0.2)';
                             $('.head-mobile').css('background', 'rgba(0, 0, 0, 0.2)');
                             $('.back-top').hide();
                         }
-                        toPage(now);
                     }
                     endTime = new Date().getTime();  
                 }else{  

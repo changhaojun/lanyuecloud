@@ -1,10 +1,14 @@
 html,body{
     height:100%;
 }
+.head-mobile {
+    background: #1d2329;
+}
+.head-mobile a {
+    color: #ffffff;
+}
 .main {
     width: 100%;
-    top: 87px;
-    height: calc(100% - 92px);
     position: relative;
 }
 .head {
@@ -200,5 +204,73 @@ html,body{
     }
     .suspension>ul>li>.suspension-content::after {
         bottom: 15px
+    }
+}
+
+@media (max-width: 420px) {
+    .suspension {
+        width: 2.25rem;
+        right: 2.75rem;
+        bottom: 3rem;
+        height: 7.3rem;
+    }
+    .suspension>ul>li {
+        height: 2.25rem;
+        padding-left: 1.25rem;
+    }
+    .suspension>ul>li>.li-box {
+        width: 2.25rem;
+    }
+    .suspension>ul>li>.li-box>img {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+    .customer-left>img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .customer-left {
+        margin-right: 0.625rem;
+        margin-top: 0.3rem;
+    }
+    .customer-right>label {
+        font-size: 1rem;
+    }
+    .suspension>ul>li>.photo>.customer:nth-child(1) .right-num {
+        font-size: 0.875rem;
+    }
+    .customer-right>.right-num {
+        font-size: 0.875rem;
+    }
+    .suspension>ul>li>.suspension-content {
+        width: 12.5rem;
+        right: 2.1rem;
+        padding:  0.625rem;
+    }
+    .suspension>ul>li>.photo>.customer {
+        height: 2.75rem;
+        padding: 0.5rem 0.25rem;
+    }
+    .suspension>ul>li>.suspension-content::after {
+        bottom: 1rem;
+    }
+    .suspension-content>.qr_>.qr-code {
+        width: 12.3rem;
+        height: 12.3rem;
+    }
+    .qr-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 87.5%;
     }
 }

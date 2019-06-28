@@ -1,0 +1,31 @@
+@media screen and (max-width: 420px) {
+    .footer>.warp {
+        display: initial;
+    }
+    .footer {
+        padding: 0 1rem;
+    }
+    .address {
+        margin-top: initial;
+        text-align: center;
+    }
+    .address>span {
+        font-size: 1.125rem;
+    }
+    .address>p>span {
+        font-size: 0.875rem;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .qr {
+        width: 100%;
+        text-align: center;
+        padding-top: 3.5rem;
+    }
+    .qr>img {
+        width: 11.5rem;
+        height: 8.5rem;
+        display: inline-block;
+    }
+}
+
