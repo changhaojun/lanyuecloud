@@ -489,10 +489,12 @@ i,em{
     .zoology-reason {
         height: auto;
         padding: 0 1rem;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
     }
     .zoology-reason h1 {
         font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
     }
     .zoology-reason .zoology-result {
         height: initial;
@@ -542,6 +544,8 @@ i,em{
     }
     .cooperation div {
         font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
     }
     .cooperation p {
         height: initial;
@@ -571,6 +575,8 @@ i,em{
     }
     .recruit h2 {
         font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
     }
     .recruit .recruit-content {
         height: initial;
@@ -628,8 +634,8 @@ i,em{
     }
     .add-link h2 {
         font-size: 1.5rem;
-        height: 1.5rem;
-        line-height: 1.5rem;
+        height: auto;
+        line-height: initial;
     }
     .add-link p {
         height: auto;

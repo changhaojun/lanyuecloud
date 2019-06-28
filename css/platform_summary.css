@@ -625,3 +625,349 @@ i,em{
     line-height:24px;
     margin-top: 20px;
 }
+
+@media (max-width: 420px) {
+    .top-banner {
+        background-size: cover;
+        height: 9rem;
+        padding: 0.25rem 1rem 0;
+    }
+    .top-banner .banner-content {
+        width: 100%;
+        height: auto;
+    }
+    .top-banner .banner-content h2 {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        height: auto;
+    }
+    .top-banner .banner-content p {
+        width: 100%;
+        height: initial;
+        line-height: 1.125rem;
+        font-size: 0.875rem;
+        margin-top: 0;
+    }
+    .top-banner .banner-content span {
+        width: 7rem;
+        height: 2rem;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        line-height: 2rem;
+    }
+    .top-banner .banner-content span:nth-child(2) {
+        margin-left: 1.5rem;
+    }
+    .summary {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 1rem 0;
+    }
+    .summary .summary-left {
+        width: 100%;
+        padding-top: 0;float: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .summary-left .summary-content {
+        width: calc(100% - 5rem);
+        position: initial;
+    }
+    .summary-left .summary-content>h2 {
+        font-size: 1.5rem;
+    }
+    .summary-left .summary-content p {
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+        line-height: initial;
+    }
+    .summary .summary-right {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        float: none;
+    }
+    .summary .summary-right>img {
+        width: 100%;
+    }
+    .conditions {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .conditions h2 {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
+    }
+    .conditions .kinds {
+        height: auto;
+        padding: 0 1rem;
+    }
+    .conditions .kinds .kinds-name {
+        width: 100%;
+        margin-top: 0.5rem;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .conditions .kinds .kinds-name li {
+        width: 33.3%;
+        font-size: 1.125rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin: 0;
+    }
+    .conditions .kinds .kinds-content {
+        height: auto;
+        padding: 1rem;
+    }
+    .kinds-content .choose .map {
+        display: none;
+    }
+    .kinds-content .choose .detail {
+        float: none;
+        width: 100%;
+        padding-top: 0;
+    }
+    .kinds-content .choose .detail h2 {
+        height: 2.25rem;
+        line-height: 2.25rem;
+        font-size: 1.125rem;
+    }
+    .kinds-content .choose .detail h3 {
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .kinds-content .choose .detail li {
+        line-height: 1.25rem;
+        margin-left: 1.25rem;
+    }
+    .kinds-content .choose .detail h4 {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+        line-height: 1.375rem;
+    }
+    .advantage {
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+        padding:0 1rem;
+    }
+    .advantage h2 {
+        height: auto;
+        line-height: initial;
+        font-size: 1.5rem;
+    }
+    .advantage ul {
+        height: auto;
+        margin-top: 0.5rem;
+    }
+    .advantage ul li {
+        height: 15.6rem;
+        width: 50%;
+        padding: 1rem 1rem 0;
+    }
+    .advantage ul li:nth-child(2) {
+        border-right: 1px solid rgba(232,232,232,1);
+    }
+    .advantage ul li:nth-child(3) {
+        border-top: none;
+    }
+    .advantage ul li:nth-child(4) {
+        border-top: none;
+    }
+    .advantage ul li:nth-child(3n-1) {
+        border-left: 1px solid rgba(232,232,232,1);
+        border-right: 1px solid rgba(232,232,232,1);
+    }
+    .advantage ul li:nth-child(even) {
+        border-left: none;
+    }
+    .advantage ul li img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .advantage ul li>div {
+        height: 4.5rem;
+    }
+    .advantage ul li h3 {
+        height: 2.5rem;
+        line-height: 1.25rem;
+        font-size: 1rem;
+    }
+    .advantage ul li p {
+        line-height: initial;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+    }
+    .function {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+    .function h2 {
+        height: auto;
+        line-height: initial;
+        font-size: 1.5rem;
+    }
+    .function .method {
+        width: 100%;
+        height: auto;
+        padding: 0 1rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .function .method li {
+        width: 8rem;
+        float: none;
+        margin: 0 1rem;
+    }
+    .function .method li:nth-child(2) {
+        float: none;
+    }
+    .function .method li>img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .function .method li h4 {
+        height: auto;
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .content-choose {
+        padding: 0 1rem;
+        height: auto;
+    }
+    .content-choose .method-content {
+        width: 100%;
+        height: auto;
+        padding-top: 1.5rem;
+    }
+    .method-content .choice ul li {
+        width: calc(50% - 0.5rem);
+        padding: 1rem 1rem 0;
+        margin: 0 1rem 1rem 0;
+        height: 11rem;
+    }
+    .method-content .choice ul li:nth-child(even) {
+        margin-right: 0;
+    }
+    .method-content .choice ul li>img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .method-content .choice ul li h4 {
+        height: auto;
+        line-height: 2rem;
+        font-size: 1rem;
+        margin-top: 0.25rem;
+    }
+    .method-content .choice ul li p {
+        height: auto;
+        line-height: initial;
+        padding: 0;
+        font-size: 0.875rem;
+    }
+    .method-content .choice ul .mobile p {
+        font-size: 0.875rem;
+        line-height: initial;
+    }
+    .method-content .choice ul .mobile a {
+        width: 100%;
+        height: 2.1rem;
+        line-height: 2.1rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .method-content .choice ul .mobile {
+        height: 15.5rem;
+    }
+    .method-content .choice ul .mobile p {
+        height: 4.75rem;
+    }
+    .framework {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 1rem 0;
+    }
+    .framework h2 {
+        height: auto;
+        line-height: initial;
+        font-size: 1.5rem;
+    }
+    .framework p {
+        height: initial;
+        width: auto;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        line-height: 1.375rem;
+    }
+    .framework img {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .case {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 1rem 0;
+    }
+    .case h2 {
+        height: auto;
+        line-height: initial;
+        font-size: 1.5rem;
+    }
+    .case h4 {
+        width: 6rem;
+        height: auto;
+        line-height: 2rem;
+        font-size: 1rem;
+        border-width: 0.18rem;
+        margin-top: 0;
+    }
+    .case .case-company {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .case .case-company div {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .case .case-company div:first-child>img {
+        width: 100%;
+    }
+    .case .case-company div:nth-child(2) {
+        width: 100%;
+        padding: 1rem;
+    }
+    .case-company p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 92%;
+    }
+    .method-content .choice ul li {
+        height: 12rem;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 87.5%;
+    }
+}

@@ -235,3 +235,95 @@ h2{
 .structure .nav-tabs>li.active>a:hover{
     border: dashed 1px #373e47;
 }
+
+
+@media (max-width: 420px) {
+    .platform {
+        background-size: cover;
+        height: 22rem;
+        padding: 0.25rem 1rem 0;
+        background-position: bottom;
+    }
+    .plat-banner>h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    .consultation {
+        width: 7rem;
+        height: 2rem;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+    .platform-function {
+        margin-bottom: 1rem;
+    }
+    .plat-common h3 {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: initial;
+        margin: 1rem 0;
+    }
+    .function-common dl {
+        margin-bottom: 1rem;
+    }
+    .function-common {
+        height: 4rem;;
+    }
+    .platform-function .net, .platform-function .test, .platform-function .analysis {
+        background-size: contain;
+    }
+    .plat-common dt>p {
+        font-size: 1rem;
+    }
+    .resolve {
+        padding-bottom: 1rem;
+    }
+    #myTabContent {
+        padding: 1rem;
+    }
+    #myTabContent ul {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    #myTabContent dl {
+        margin-bottom: 0;
+    }
+    .structure {
+        margin-bottom: 1.5rem;
+    }
+    .nav-tabs>li span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 93%;
+    }
+    .platform {
+        height: 26rem;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 92%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 87.5%;
+    }
+    .platform {
+        height: 30rem;
+    }
+}

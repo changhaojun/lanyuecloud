@@ -477,7 +477,7 @@ i,em{
         width: 100%;
         height: auto;
         padding: 0 1rem;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .introduce h1 {
         font-size: 1.5rem;
@@ -520,7 +520,7 @@ i,em{
         margin-right: 0;
     }
     .velues ul li div {
-        height: 4rem;
+        height: 5rem;
         line-height: initial;
     }
     .velues ul li div>img {
@@ -528,12 +528,9 @@ i,em{
         height: 4rem;
     }
     .velues ul li h3 {
-        height: 2rem;
-        line-height: initial;
+        height: 2.5rem;
+        line-height: 1.25rem;
         font-size: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .velues ul li p {
         line-height: initial;
@@ -609,7 +606,7 @@ i,em{
     .conditions {
         width: 100%;
         height: auto;
-        margin: 2rem 0 1rem;
+        margin: 1rem 0 1rem;
     }
     .conditions h2 {
         font-size: 1.5rem;
