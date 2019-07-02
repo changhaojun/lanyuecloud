@@ -202,3 +202,197 @@ body{
 .modal-open .modal{
     overflow: hidden;
 }
+
+
+@media (max-width: 420px) {
+    .platform {
+        height: 8.5rem;
+        background-position: center;
+    }
+    .plat-banner {
+        padding-top: 0;
+    }
+    .platform h2 {
+        height: auto;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .platform p {
+        height: initial;
+        line-height: 1.125rem;
+        font-size: 0.875rem;
+        margin: 0;
+    }
+    .consultation {
+        margin: 0.5rem 0 0;
+    }
+    .consultation p {
+        width: 10rem;
+        line-height: 2.25rem;
+    }
+    .consultation p i {
+        width: 1rem;
+        height: 1rem;
+        background-size: contain;
+    }
+    .attetion {
+        margin: 1.5rem 0;
+    }
+    .attention-heat {
+        height: auto;
+        padding: 0 1rem;
+    }
+    .attention-bg {
+        padding: 1.5rem 1rem 0 1rem;
+        position: inherit;
+        height: 30rem;
+    }
+    .feature-title {
+        font-size: 1.25rem;
+        height: auto;
+        line-height: initial;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .attention-bg p {
+        width: 100%;
+        font-size: 1rem;
+        padding-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .attention-template {
+        width: 11rem;
+        height: 21rem;
+        top: 8rem;
+        left: calc(50% - 5.5rem);
+    }
+    .operation-condition {
+        padding: 1.5rem 0;
+    }
+    .operation-condition .details {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem 1rem 0;
+
+    }
+    .station {
+        margin-top: 1.5rem !important;
+    }
+    .operation-condition img {
+        width: -webkit-fill-available;
+    }
+    .operation-condition .special {
+        width: auto !important;
+        padding: 14% 0 0;
+        font-size: 0.875rem;
+    }
+    .operation-condition .special p:nth-of-type(1) {
+        font-size: 1.75rem;
+    }
+    .station>div:nth-child(4) {
+        margin-left: 1rem;
+    }
+    .alarm-bg {
+        padding: 1rem;
+        background-size: cover;
+    }
+    .alarm-bg .feature-title {
+        font-size: 1.25rem;
+        height: auto;
+        line-height: initial;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .alarm-bg p {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        width: 60%;
+        margin-left: 40%;
+    }
+    .data {
+        margin-top: 1.5rem !important;
+    }
+    .data>div:nth-child(4) {
+        margin-left: 1rem;
+    }
+
+    .modal-dialog {
+        margin: 2rem;
+    }
+    .modal-header {
+        padding: 1rem;
+    }
+    .modal-title {
+        font-size: 1rem;
+    }
+    .download-app {
+        margin: 1rem 0 1.5rem;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .download-app dl:nth-of-type(1), .download-app dl:nth-of-type(2) {
+        margin: 0
+    }
+    .download-app dt {
+        margin-bottom: 1rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size: 0.875rem;
+        width: 100%;
+    }
+    .download-app i {
+        width: 1.375rem;
+        height: 1.5rem;
+    }
+    .download-app .android-app i, .download-app .ios-app i {
+        background-size: contain;
+    }
+    .download-app dl {
+        float: none !important;
+        width: calc(50% - 0.5rem);
+    }
+    .download-app dd {
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 0.5rem;
+        
+    }
+    .download-app .android-app dd, .download-app .ios-app dd {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 92%;
+    }
+    .platform {
+        height: 9.5rem;
+    }
+    .download-app dd {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 87.5%;
+    }
+    .data>div:nth-child(2)>p:nth-child(2) {
+        width: 5.75rem;
+    }
+    .attention-template {
+        height: 20rem;
+        top: 9rem;
+    }
+}

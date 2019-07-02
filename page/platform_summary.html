@@ -212,13 +212,13 @@
                         <img src="../images/summary_13.png" alt="">
                         <h4>智慧供热APP</h4>
                         <p>换热站运行数据实时查看，设备故障实时告警，数据对比分析...</p>
-                        <a href="heating_monitor_app.html" target="iframe0">了解详情及下载</a>
+                        <a href="heating_monitor_app.html" data-i='2' target="iframe0"  onclick="pageActive(event)">了解详情及下载</a>
                     </li>
                     <li class="mobile">
                         <img src="../images/summary_12.png" alt="">
                         <h4>巡检APP</h4>
                         <p>保证巡检任务按时完成，巡检情况统计，上报，维护换热站正常运行</p>
-                        <a href="operation.html" target="iframe0">了解详情及下载</a>
+                        <a href="operation.html" data-i='2' target="iframe0" onclick="pageActive(event)">了解详情及下载</a>
                     </li>
                 </ul>
             </li>
@@ -254,4 +254,18 @@
 <script src="../plugins/bootstarp/js/bootstrap.min.js"></script>
 <script src="../js/platform_summary.js?v=1.0.0"></script>
 <script src="../js/back_top.js?v=1.0.0"></script>
+<script>
+    function pageActive(event) {
+            let i = Number(event.target.getAttribute('data-i'));
+
+            $('.menu-mobile').hide();
+            $('.second-menu').hide();
+            $('.case-mobile').hide();
+
+            const href = event.target.getAttribute('href');
+            let currentIndex =  event.target.getAttribute('data-i');
+            window.sessionStorage.setItem('href', href);
+            window.sessionStorage.setItem('currentIndex', currentIndex);
+        }
+</script>
 </html>

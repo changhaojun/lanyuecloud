@@ -674,7 +674,7 @@ i,em{
         position: initial;
     }
     .summary-left .summary-content>h2 {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
     .summary-left .summary-content p {
         font-size: 0.875rem;
@@ -696,7 +696,7 @@ i,em{
         margin-top: 1rem;
     }
     .conditions h2 {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
         height: auto;
         line-height: initial;
     }
@@ -758,7 +758,7 @@ i,em{
     .advantage h2 {
         height: auto;
         line-height: initial;
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
     .advantage ul {
         height: auto;
@@ -810,7 +810,7 @@ i,em{
     .function h2 {
         height: auto;
         line-height: initial;
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
     .function .method {
         width: 100%;
@@ -896,7 +896,7 @@ i,em{
     .framework h2 {
         height: auto;
         line-height: initial;
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
     .framework p {
         height: initial;
@@ -917,7 +917,7 @@ i,em{
     .case h2 {
         height: auto;
         line-height: initial;
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
     .case h4 {
         width: 6rem;

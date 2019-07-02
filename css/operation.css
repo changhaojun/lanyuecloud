@@ -473,3 +473,306 @@ i,em{
         height: 420px;
     }
 }
+
+
+
+@media (max-width: 420px) {
+    .top-banner {
+        height: 8rem;
+        background-position: center;
+        padding: 0 1rem 0;;
+    }
+    .top-banner div {
+        width: 100%;
+    }
+    .top-banner div h2 {
+        height: auto;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    .top-banner div p {
+        width: 100%;
+        height: initial;
+        line-height: 1.125rem;
+        font-size: 0.875rem;
+        margin-top: 0;
+    }
+    .top-banner div span {
+        width: 10rem;
+        line-height: 2.25rem;
+        height: initial;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+    }
+    .top-banner div span>img {
+        width: 1rem;
+        height: 1rem;
+    }
+    .focus {
+        padding: 1.5rem 1rem 0;
+        height: auto;
+    }
+    .focus .foucu-check {
+        width: 100%;
+        height: 29rem;
+        padding: 1.5rem 1rem 0 1rem;
+    }
+    .focus .foucu-check h2 {
+        font-size: 1.25rem;
+        height: auto;
+        line-height: initial;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .focus .foucu-check p {
+        width: 100%;
+        font-size: 1rem;
+        padding-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        height: auto;
+        line-height: initial;
+        margin-top: 0;
+    }
+    .focus .foucu-check div {
+        width: 11rem;
+        height: 21rem;
+        top: 8rem;
+        left: calc(50% - 5.5rem);
+    }
+    .focus .foucu-check div>img {
+        width: 100%;
+        height: 100%;
+    }
+    .quick {
+        height: auto;
+    }
+    .quick .quick-check {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 0 1rem;
+    }
+    .quick .quick-check h2 {
+        font-size: 1.25rem;
+        height: auto;
+        line-height: initial;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .quick .quick-check>p {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem 1rem 0;
+        height: auto;
+        line-height: initial;
+        margin-top: 0;
+    }
+    .quick .quick-check .quick-step {
+        height: 10rem;
+        margin-top: 1.5rem;
+        background-size: contain;
+        padding-top: 0;
+    }
+    .quick-check .quick-step li {
+        height: 3rem;
+        width: 4rem;
+        margin-left: 5.5rem;
+        margin-top: 3.5rem;
+    }
+    .quick-check .quick-step li div {
+        height: 0.25rem;
+        overflow: hidden;
+    }
+    .quick-check .quick-step li span {
+        margin-left: 0.25rem;
+        width: 0.25rem;
+        height: 0.25rem;
+    }
+    .quick-check .quick-step li p {
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        width: 4.5rem;
+        height: auto;
+        line-height: initial;
+    }
+    .quick-check .quick-step li:nth-child(2) {
+        margin-left: 6.5rem;
+    }
+    .fix {
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        height: auto;
+        background-size: cover;
+    }
+    .fix h2 {
+        width: 100%;
+        font-size: 1.25rem;
+        height: auto;
+        line-height: initial;
+        margin: 0;
+        padding-bottom: 0;
+        text-align: right;
+    }
+    .fix p {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        width: 60%;
+        margin-left: 40%;
+        height: auto;
+        line-height: initial;
+    }
+    .sign {
+        height: auto;
+    }
+    .sign .sign-check {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 0 1rem;
+    }
+    .sign .sign-check h2 {
+        width: 100%;
+        font-size: 1.25rem;
+        height: auto;
+        line-height: initial;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .sign .sign-check>p {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        height: auto;
+        line-height: initial;
+        padding: 0 1rem;
+    }
+    .sign .sign-check .sign-step {
+        height: 10rem;
+        margin-top: 1.5rem;
+        background-size: contain;
+        padding-top: 0;
+    }
+    .sign .sign-check li {
+        height: 3rem;
+        width: 4rem;
+        margin-left: 5.5rem;
+        margin-top: 3.5rem;
+    }
+    .sign .sign-check li div {
+        height: 0.25rem;
+        overflow: hidden;
+    }
+    .sign .sign-check li span {
+        margin-left: 0.25rem;
+        width: 0.25rem;
+        height: 0.25rem;
+    }
+    .sign .sign-check li p {
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        width: 4.5rem;
+        height: auto;
+        line-height: initial;
+    }
+    .sign .sign-check li:nth-child(2) {
+        margin-left: 6.5rem;
+    }
+
+    .modal-dialog {
+        width: calc(100% - 4rem);
+        height: auto;
+        margin: 2rem;
+    }
+    .modal-header {
+        padding: 1rem;
+    }
+    .modal-title {
+        font-size: 1rem;
+    }
+    .download-app {
+        margin: 1rem 0 1.5rem;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .download-app dl:nth-of-type(1) {
+        margin: 0;
+        width: 90%;
+    }
+    .download-app dt {
+        height: 2.5rem;
+        line-height: 2.5rem;
+        width: 100%;
+        margin-top: 0;
+        font-size: 0.875rem;
+    }
+    .download-app .android-app i {
+        background-size: contain;
+    }
+    .download-app i {
+        width: 1.375rem;
+        height: 1.5rem;
+    }
+    .download-app dd {
+        width: 10rem;
+        height: 10rem;
+    }
+    .download-app .android-app dd {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 384px) {
+    html {
+        font-size: 93%;
+    }
+}
+@media (max-width: 375px) {
+    html {
+        font-size: 93%;
+    }
+    .quick-check .quick-step li:nth-child(2) {
+        margin-left: 6rem;
+    }
+    .sign .sign-check li:nth-child(2) {
+        margin-left: 6rem;
+    }
+} 
+
+@media (max-width: 360px) {
+    html {
+        font-size: 92%;
+    }
+    .quick-check .quick-step li:nth-child(2) {
+        margin-left: 5rem;
+    }
+    .sign .sign-check li:nth-child(2) {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 87.5%;
+    }
+    .quick-check .quick-step li {
+        width: 3rem;
+    }
+    .quick-check .quick-step li p {
+        width: 3.5rem
+    }
+    .quick-check .quick-step li:nth-child(2) {
+        margin-left: 5.5rem;
+    }
+    .sign .sign-check li:nth-child(2) {
+        margin-left: 5rem;
+    }
+    .sign .sign-check li {
+        width: 3rem;
+    }
+    .sign .sign-check li p {
+        width: 3.5rem
+    }
+    .sign .sign-check li:nth-child(2) {
+        margin-left: 5.5rem;
+    }
+}

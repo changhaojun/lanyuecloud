@@ -384,10 +384,10 @@ i,em{
     .company-intr {
         height: initial;
         padding: 0 1rem;
-        padding-top: 2rem;
+        padding-top: 1.5rem;
     }
     .company-intr div {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
     .company-intr p {
         height: initial;
@@ -398,13 +398,13 @@ i,em{
     }
     .cooperation {
         height: auto;
-        padding: 2rem 1rem 0;
+        padding: 1.5rem 1rem 0;
 
     }
     .cooperation div {
         height: initial;
         line-height: initial;
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
     .cooperation ul {
         width: 100%;
@@ -427,7 +427,7 @@ i,em{
     .servers-name {
         height: initial;
         line-height: initial;
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
     .servers ul {
         width: 100%;
@@ -486,7 +486,7 @@ i,em{
         height: auto;
     }
     .address .address-title {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
     .address .address-map {
         margin-top: 0.5rem;
