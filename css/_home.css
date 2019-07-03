@@ -125,7 +125,7 @@
         line-height: 1.5rem;
     }
     .screen-2 .bottom-content {
-        height: 45%;
+        height: 43%;
     }
     .bottom-content li {
         width: calc(100% - 2rem);
@@ -140,7 +140,7 @@
     .bottom-content .small-describe {
         line-height: initial;
         font-size: 0.875rem;
-        margin-top: 0.625rem;
+        margin-top: 0.5rem;
         color: #999;
     }
     .bottom-content .details {
@@ -398,7 +398,7 @@
         top: 10.5rem;
     }
     .screen-2 .bottom-content {
-        height: 48%;
+        height: 45%;
     }
     .product-service-top {
         height: 34%;
@@ -459,7 +459,7 @@
         padding-top: 4rem;
     }
     .screen-2 .bottom-content {
-        height: 56%;
+        height: 54%;
     }
     .top-ul>li p {
         display: none;
