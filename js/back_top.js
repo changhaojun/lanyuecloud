@@ -13,6 +13,7 @@ $(function() {
             $('body, html').animate({
                 scrollTop: 0
             },500);
+            $('.back-top').css('background', 'rgba(0,0,0,0.6)');
         })
         const parent1 = $('.menu-mobile', parent.document);
         document.querySelector('body').addEventListener('click', function() {

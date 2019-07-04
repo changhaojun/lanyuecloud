@@ -456,8 +456,9 @@ i,em{
     background: url("../img/app/android.png") no-repeat;
 }
 .download-app .android-app dd{
-    background: url("../img/app/qr_android.png") no-repeat;
+    background: url("../img/app/heating_operat.png") no-repeat;
     margin-top: 20px;
+    background-size: cover;
 }
 @media screen and (max-height: 768px) {
     .modal-dialog{

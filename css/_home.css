@@ -4,7 +4,9 @@
     }
     .suspension>ul>li {
         height: 2.25rem;
-        padding-left: 1.25rem;
+        /* padding-left: 1.25rem; */
+        padding-left: 0;
+        margin-left: 2.25rem
     }
     .suspension>ul>li>.li-box {
         width: 2.25rem;
@@ -17,6 +19,7 @@
         width: 2.25rem;
         right: 3.37rem;
         bottom: 3rem;
+        position: fixed;
     }
     .customer-left>img {
         width: 2rem;
@@ -37,7 +40,7 @@
     }
     .suspension>ul>li>.suspension-content {
         width: 12.5rem;
-        right: 2.1rem;
+        right: 1.1rem;
         padding:  0.625rem;
     }
     .suspension>ul>li>.photo>.customer {
@@ -76,6 +79,7 @@
         bottom: 1.25rem;
         width: 2.5rem;
         height: 2.5rem;
+        display: none;
     }
     .switch-point>li {
         width: 1rem;
@@ -88,6 +92,7 @@
     }
     .switch-point {
         right: 1.25rem;
+        display: none;
     }
     .mobile {
         position: absolute;
@@ -110,11 +115,35 @@
         font-weight: bold;
         line-height: 1.5rem;
     }
+    .mobile>span {
+        width: 8rem;
+        height: 2.125rem;
+        line-height: 2.125rem;
+        font-size: 1rem;
+        display: inline-block;
+        text-align: center;
+    color: #333333;
+    background-image: linear-gradient(90deg, 
+        #ffc427 0%, 
+        #fead00 100%),
+        linear-gradient(
+        #ffba00, 
+        #ffba00);
+        border-radius: 2px;
+        margin-top: 0.875rem;
+    }
     
     /* .screen-2 */
+    .screen-2 {
+        height: 36.5rem;
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .screen-2 .top-content {
         width: calc(100% - 4.75rem);
-        padding: 10rem 3.75rem 0 1rem;
+        padding: 5rem 3.75rem 0 1rem;
     }
     .top-content .big-title {
         font-size: 1.375rem;
@@ -125,11 +154,15 @@
         line-height: 1.5rem;
     }
     .screen-2 .bottom-content {
-        height: 43%;
+        height: auto;
+        position: initial;
+    }
+    .bottom-content ul {
+        padding: 0.5rem 0;
     }
     .bottom-content li {
         width: calc(100% - 2rem);
-        height: initial;
+        height: auto;
         padding: 0.625rem 1rem;
         float: none;
         position: relative;
@@ -157,8 +190,13 @@
     }
 
     /* .screen-3 */
-    .product-service-top, .product-service-bottom {
+    .product-service-top {
         padding: 0 0.9rem;
+        height: 14.5rem;
+    }
+    .product-service-bottom {
+        padding: 0 0.9rem;
+        height: 26.5rem;
     }
     .product-service-top .big-title {
         font-size: 1.375rem;
@@ -167,6 +205,9 @@
     }
     .top-ul {
         width: 100%;
+    }
+    .top-ul>li p {
+        height: 3rem;
     }
     .top-ul>li span {
         font-size: 1rem;
@@ -191,7 +232,6 @@
         margin: 5px 0 1rem;
         line-height: 1.25rem;
         height: 10rem;
-        overflow: hidden;
     }
     .li-content>i {
         height: 2.25rem;
@@ -232,6 +272,10 @@
     }
 
     /* .screen-4 */
+    .screen-4 {
+        margin-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
     .case {
         padding: 0 1rem;
         width: calc(100% - 2rem);
@@ -257,7 +301,6 @@
     }
     .case-1>li>div {
         width: 100%;
-        height: 6rem;
         margin-bottom: 1rem;
     }
     .case-1>li>div:first-child {
@@ -278,8 +321,7 @@
         font-size: 1rem;
         line-height: initial;
         margin-top: 0.4rem;
-        height: 4.2rem;
-        overflow: hidden;
+        height: auto;
     }
     .case-details {
         width: 10rem;
@@ -289,6 +331,10 @@
     }
 
     /* screen-5 */
+    .screen-5 {
+        margin: 2rem 0 0;
+        padding-bottom: 2rem;
+    }
     .ecological-top, .ecological-bottom {
         padding: 0 1rem;
     }
@@ -325,7 +371,8 @@
 
     /* screen-6 */
     .screen-6 {
-        padding: 0 1rem;
+        padding: 0 1rem 2rem;
+        margin-bottom: 2rem;
     }
     .about-top .big-title {
         font-size: 1.375rem;
@@ -349,6 +396,9 @@
     }
 
     /* screen-7 */
+    .screen-7 {
+        height: 35rem;
+    }
     .cooperation-top, .cooperation-bottom {
         padding: 0 1rem;
     }
@@ -359,7 +409,7 @@
     }
     .cooperation-bottom {
         width: calc(100% - 2rem);
-        height: 18rem;
+        height: 12rem;
     }
     .cooperation-bottom>span {
         font-size: 1.375rem;
@@ -394,21 +444,11 @@
     html{
         font-size: 93%;
     }
-    .mobile {
-        top: 10.5rem;
+    .screen-7 {
+        height: 33rem;
     }
-    .screen-2 .bottom-content {
-        height: 45%;
-    }
-    .product-service-top {
-        height: 34%;
-    }
-    .top-ul>li p {
-        height: 38px;
-    }
-    .product-service-bottom {
-        height: 66%;
-    }
+
+
     .ecological-ul>li {
         height: 118px;
     }
@@ -437,9 +477,6 @@
     html{
         font-size: 90%;
     }
-    .mobile {
-        top: 10rem;
-    }
     .li-content>span {
         height: 1.3rem;
     }
@@ -452,35 +489,29 @@
     html{
         font-size: 87.5%;
     }
-    .mobile {
-        top: 8rem;
-    }
     .screen-2 .top-content {
         padding-top: 4rem;
     }
-    .screen-2 .bottom-content {
-        height: 54%;
-    }
     .top-ul>li p {
-        display: none;
+        height: 4rem;
     }
     .top-ul>li span {
         margin-top: 0;
     }
-    .product-service-top {
-        height: 28%;
+    .li-content>p {
+        height: 12rem;
     }
     .product-service-bottom {
-        height: 72%;
-    }
-    .li-content>p {
-        height: 9.8rem;
+        height: 28.5rem;
     }
     .ecological-ul>li {
         padding: 0 1rem;
     }
     .ecological-bottom {
-        height: 380px;
+        height: 420px;
+    }
+    .ecological-ul>li {
+        height: 129px;
     }
     .ecological-details>span {
         font-size: 1.2rem;
@@ -488,6 +519,9 @@
     }
     .ecological-details>p, .ecological-details>p>span {
         font-size: 0.85rem;
+    }
+    .screen-7 {
+        height: 32rem;
     }
     .cooperation-unit {
         height: 142px;
@@ -498,8 +532,5 @@
     }
     .cooperation-unit>.unit-2 {
         top: 72px;
-    }
-    .cooperation-bottom {
-        height: 15rem;
     }
 }

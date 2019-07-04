@@ -723,7 +723,12 @@ i,em{
         padding: 1rem;
     }
     .kinds-content .choose .map {
-        display: none;
+        float: none;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .kinds-content .choose .map>img {
+        width: 100%;
     }
     .kinds-content .choose .detail {
         float: none;

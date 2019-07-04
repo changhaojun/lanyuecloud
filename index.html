@@ -139,6 +139,7 @@
                             <p>
                                 工业设备运行数据接入揽月云智能工业平台，寻找最优的调控方案，提升企业能效，最终实现降耗增效
                             </p>
+                            <span data-href="prodouct_platform.html" data-i="2" onclick="pageJump(event)">了解详情</span>
                         </div>
                         <span data-href="prodouct_platform.html" data-i="2" onclick="pageJump(event)">了解详情</span>
                     </li>
@@ -148,6 +149,7 @@
                             <p>
                                 联合制造厂商、渠道商、等厂商，一同建立智能工业领域新生态
                             </p>
+                            <span data-href="zoology.html" data-i="4" onclick="pageJump(event)">了解详情</span>
                         </div>
                         <span data-href="zoology.html" data-i="4" onclick="pageJump(event)">了解详情</span>
                     </li>
@@ -484,9 +486,9 @@
                     <li><a><img src="./image/unit_10.png" alt=""></a></li>
                     <li><a><img src="./image/unit_5.png" alt=""></a></li>
                     <li><a><img src="./image/unit_6.png" alt=""></a></li>
-                    <li><a><img src="./image/chengde1.png" alt=""></a></li>
+                    <!-- <li><a><img src="./image/chengde1.png" alt=""></a></li> -->
                     <li><a><img src="./image/unit_8.png" alt=""></a></li>
-                    <li><a><img src="./image/nxlly.png" alt=""></a></li>
+                    <!-- <li><a><img src="./image/nxlly.png" alt=""></a></li> -->
                     <li><a><img src="./image/unit_2.png" alt=""></a></li>
                 </ul>
                 </div>
@@ -504,7 +506,7 @@
                     <div class="address">
                         <span>北京智信远景软件技术有限公司</span>
                         <p>
-                            <span>Add：北京市朝阳区安立路68号飘亮广场B-343</span>
+                            <span>Add：北京市朝阳区利泽中二路1号中辰大厦6层613</span>
                             <span>Tel：010-64934568 E-mail：sales@finfosoft.com</span>          
                         </p>
                     </div>
@@ -623,7 +625,7 @@
                     this.assignment();
                     this.compatible();
                     $('.progress-bar span i').eq(mark).animate({width: 43 + 'px'}, 8000);
-                    this.play();
+                    // this.play();
                     this.clickProgress();
                     this.productSwitch();
                     this.playUnit1();
@@ -636,29 +638,42 @@
                     this.backTop();
                     $('.back-top').hide();
                     this.menuHide('#main');
-                    this.menuHide('.arrow');
                     this.menuHide('.suspension');
                 },
                 assignment: function() {
-                    if(wid < 421) {
+                    const obj = [].slice.call(document.querySelectorAll('.screen'));
+                    if(wid <= 420) {
                         headHeight = 58;
                         $('.head').hide();
+                        $('.banner-ul>li>span').hide();
                         $('.head-mobile').show();
                         $('.mobile').show();
                         $('.li-1').css({background: 'url(./../image/banner1_.png)', backgroundSize: 'cover'});
                         $('.li-2').css({background: 'url(./../image/banner2_.png)', backgroundSize: 'cover'});
+                        for(let i in obj){
+                            if(obj[i].classList.contains('screen-first')) {
+                                obj[i].style.height = hei + "px";
+                            }
+                        }
+                        $(window).scroll(function(event){
+                            const scrollTop = document.body.scrollTop||document.documentElement.scrollTop;
+                            if(scrollTop > hei) {
+                                $('.back-top').show();
+                            }else {
+                                $('.back-top').hide();
+                            }
+                        });
                     }else {
                         $('.head').show();
                         $('.head-mobile').hide();
-                    }
-                    $("#home").css('height', hei + "px");
-                    const obj = [].slice.call(document.querySelectorAll('.screen'));
-                    for(let i in obj){
-                        if(obj[i].classList.contains('screen-first')) {
-                            obj[i].style.height = hei + "px";
-                        }
-                        if(obj[i].classList.contains('screen-other')) {
-                            obj[i].style.height = hei - headHeight + "px";
+                        $("#home").css('height', hei + "px");
+                        for(let i in obj){
+                            if(obj[i].classList.contains('screen-first')) {
+                                obj[i].style.height = hei + "px";
+                            }
+                            if(obj[i].classList.contains('screen-other')) {
+                                obj[i].style.height = hei - headHeight + "px";
+                            }
                         }
                     }
                 },
@@ -881,14 +896,21 @@
                 },
                 backTop: function() {
                     $('.back-top').click(function() {
-                        index = 1;
-                        currentEq = 1;
-                        now = 0;
-                        head.style.background = 'rgba(0, 0, 0, 0.2)';
-                        $('.head-mobile').css('background', 'rgba(0, 0, 0, 0.2)');
-                        $('.switch-point>li').removeClass('point-active');
-                        $('.switch-point>li').eq(0).addClass('point-active');
-                        toPage(now);
+                        if(wid <= 420) {
+                            $('body, html').animate({
+                                scrollTop: 0
+                            },500);
+                            $('.back-top').css('background', 'rgba(0,0,0,0.6)');
+                        }else {
+                            index = 1;
+                            currentEq = 1;
+                            now = 0;
+                            head.style.background = 'rgba(0, 0, 0, 0.2)';
+                            $('.head-mobile').css('background', 'rgba(0, 0, 0, 0.2)');
+                            $('.switch-point>li').removeClass('point-active');
+                            $('.switch-point>li').eq(0).addClass('point-active');
+                            toPage(now);
+                        }
                         $('.back-top').hide();
                     })
                 }

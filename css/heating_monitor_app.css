@@ -148,6 +148,8 @@ body{
 .download-app {
     text-align: center;
     margin:40px 0;
+    display: flex;
+    justify-content: center;
 }
 .download-app  i {
     display: inline-block;
@@ -164,6 +166,7 @@ body{
 }
 .download-app dl:nth-of-type(2){
     margin: 0 30px 0 15px;
+    display: none;
 }
 .download-app dt {
     margin-bottom: 22px;
@@ -187,7 +190,8 @@ body{
     background: url("../img/app/ios.png") no-repeat;
 }
 .download-app .android-app dd{
-    background: url("../img/app/qr_android.png") no-repeat;
+    background: url("../img/app/heating.png") no-repeat;
+    background-size: cover;
 }
 .download-app .ios-app dd{
     background: url("../img/app/qr_ios.png") no-repeat;
@@ -352,11 +356,11 @@ body{
     }
     .download-app dl {
         float: none !important;
-        width: calc(50% - 0.5rem);
+        width: 90%;
     }
     .download-app dd {
-        width: 8rem;
-        height: 8rem;
+        width: 10rem;
+        height: 10rem;
         margin-bottom: 0.5rem;
         
     }
@@ -377,10 +381,6 @@ body{
     }
     .platform {
         height: 9.5rem;
-    }
-    .download-app dd {
-        width: 7rem;
-        height: 7rem;
     }
 }
 
