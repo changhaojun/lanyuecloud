@@ -538,7 +538,16 @@ a:focus, a:hover{
         padding-right: 0;
     }
     .lanyue-web .lanyue-web-img {
-        display: none;
+        float: none;
+        width: 100%;
+        height: auto;
+        background: none;
+        padding: 0;
+    }
+    .lanyue-web .lanyue-web-img img {
+        width: 100%;
+        height: 12rem;
+        margin: 0 0 0.5rem;
     }
     .temp-common {
         width: 100%;
@@ -576,6 +585,7 @@ a:focus, a:hover{
         float: none;
         padding-left: 0;
         padding-right: 0;
+        margin-top: 1.5rem;
     }
     .two-net-water {
         margin-top: 0;

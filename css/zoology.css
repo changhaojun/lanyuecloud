@@ -625,7 +625,47 @@ i,em{
         padding: 0 0.625rem;
     }
     .add {
-        display: none;
+        padding: 1.5rem 1rem 2rem;
+        margin-top: 1rem;
+        height: auto;
+    }
+    .add h2 {
+        font-size: 1.375rem;
+        height: auto;
+        line-height: initial;
+        background-size: cover;
+    }
+    .add .road {
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+        line-height: initial;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .add .road .step {
+        width: 20%;
+    }
+    .add .road .sorrow {
+        width: 5%;
+        margin-top: -2.1rem;
+    }
+    .add .road li {
+        float: none;
+    }
+    .add .road .step div {
+        height: auto;
+        line-height: initial;
+    }
+    .add .road li img {
+        width: 100%;
+    }
+    .add .road .step p {
+        font-size: 1rem;
+        height: auto;
+        line-height: 1.25rem;
+        margin-top: 0.5rem;
     }
     .add-link {
         height: 13rem;

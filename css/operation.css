@@ -196,7 +196,7 @@ i,em{
     color:#333333;
     line-height:60px;
 }
-.quick .quick-check p{
+.quick .quick-check>p{
     height:64px;
     font-size:18px;
     font-family:SourceHanSansCN-Normal;
@@ -275,6 +275,21 @@ i,em{
     line-height:20px;
     margin-top: 15px;
 }
+.station img {
+    width: 100%;
+}
+.station .special {
+    padding: 15% 0 0 0;
+    font-size: 16px;
+    color: #FFBA02;
+}
+.station .special p:nth-of-type(1) {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+
 /*fix*/
 .fix{
     width: 1200px;
@@ -328,7 +343,7 @@ i,em{
     color:#333333;
     line-height:60px;
 }
-.sign .sign-check p{
+.sign .sign-check>p{
     height:64px;
     font-size:18px;
     font-family:SourceHanSansCN-Normal;
@@ -719,6 +734,38 @@ i,em{
     }
     .download-app .android-app dd {
         background-size: contain;
+    }
+
+
+    .station {
+        margin-top: 1.5rem !important;
+    }
+    .station img {
+        width: 100%;
+    }
+    .station .special {
+        width: auto !important;
+        padding: 10% 0 0;
+    }
+    .quick .quick-check p, .sign .sign-check p {
+        height: auto;
+        line-height: initial;
+        width: auto;
+        margin-top: 0;
+        font-size: 0.875rem;
+    }
+    .station .special p:nth-of-type(1) {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    .operation-condition .special p:nth-of-type(1) {
+        font-size: 1.75rem;
+    }
+    .station>div:nth-child(4) {
+        margin-left: 1rem;
+    }
+    .station p {
+        color: rgba(255,186,2,1) !important;
     }
 }
 
