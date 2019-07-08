@@ -265,6 +265,9 @@ h2{
         line-height: initial;
         margin: 1rem 0;
     }
+    .detail-img .no-padding {
+        padding-right: 0;
+    }
     .structure p {
         font-size: 1rem;
         padding: 1rem 0 0.5rem;
